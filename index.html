@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorify</title>
+    <!-- FILE LINK -->
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="container">
+
+        <header class='flex  font-poppins min-h-[75px] tracking-wide relative z-50 border-b border-bottom-border'>
+            <div class='flex flex-wrap items-center gap-12 w-full mx-auto font-[700] text-lg'>
+                <a href="javascript:void(0)">Tutorify
+                </a>
+
+                <div id="collapseMenu"
+                    class='max-lg:hidden lg:!flex lg:ml-auto max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+                    <button id="toggleClose"
+                        class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
+                            viewBox="0 0 320.591 320.591">
+                            <path
+                                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                                data-original="#000000"></path>
+                            <path
+                                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+
+                    <ul
+                        class='lg:flex items-center gap-[50px] max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                        <li class='mb-6 hidden max-lg:block'>
+                            <a href="javascript:void(0)">Tutorify
+                            </a>
+                        </li>
+                        <li class='max-lg:border-b max-lg:py-3 px-3'>
+                            <a href='javascript:void(0)'
+                                class='relative after:block after:w-full after:h-[3px] after:bg-primary  active:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-primary text-[16px] font-[600] font-Poppins'>Home</a>
+                        </li>
+                        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='relative after:block after:w-full after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-black text-[16px] font-[600] font-Poppins'>Lessons</a>
+                        </li>
+                        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='relative after:block after:w-full after:h-[3px] hover:text-primary after:bg-primary  after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-black text-[16px] font-[600] font-Poppins'>Find
+                                Tutors</a>
+                        </li>
+                        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='relative after:block after:w-full after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-black text-[16px] font-[600] font-Poppins'>About
+                                Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class='flex gap-[50px]  items-center max-lg:ml-auto'>
+                    <button
+                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-secondary hover:text-white'>Login</button>
+                    <button
+                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-primary hover:text-white '>Sign
+                        up</button>
+
+                    <button id="toggleOpen" class='lg:hidden'>
+                        <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- END -->
+    <!-- HERO SECTION -->
+    <div class="container font-poppins font-[600] h-full">
+        <div class="flex justify-between items-center h-full pt-14">
+            <!-- left side -->
+            <div>
+                <div class="flex items-center gap-5">
+                    <h1 class="text-primary text-[16px]">We are The Best</h1>
+                    <div class="w-32 bg-primary h-[1px]"></div>
+
+                </div>
+                <div class="text-[55px] font-[700] pt-9">
+                    <h1 class="leading-[78px]">Learn Frome Home <br>
+                        With <span class="text-primary">The Best</span> <br>
+                        Online Languange Tutors</h1>
+                </div>
+                <div class="text-texts font-[400] text-[16px] pt-10">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                        Id interdum dui mollis . Suspendisse nulla :</p>
+                </div>
+                <div class="mt-7">
+                    <a href="#"
+                        class="text-white bg-btn-colors hover:bg-black hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-12 py-3 inline-block text-[16px]"><button>
+                            Try Free Lessons
+                        </button></a>
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="relative">
+                <div class="relative rounded-[204px] bg-custom-gradient"><img src="images/hero-img.png">
+                    <div class="absolute top-28 left-[-53px]"><img src="images/china (3).png" alt=""></div>
+                    <div class="absolute top-[-11px] right-[17px]"><img src="images/china (1).png" alt=""></div>
+                    <div class="absolute bottom-56 right-[-50px]"><img src="images/china (2).png" alt=""></div>
+                </div>
+                <!-- small logo sections -->
+                <div class="absolute bottom-14 left-[-125px] ">
+                    <div class="absolute top-[-15px] left-[-20px]"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="43" viewBox="0 0 44 43" fill="none">
+                        <path d="M32.12 0C39.5671 0 43.7712 4.14735 43.7931 11.4595V31.5405C43.7931 38.8505 39.5671 43 32.12 43H11.6709C4.22384 43 0 38.8505 0 31.5405V11.4595C0 4.14735 4.22384 0 11.6709 0H32.12ZM22.9914 8.8795C22.3761 8.514 21.6316 8.514 21.0426 8.8795C20.4492 9.24285 20.1229 9.9115 20.1864 10.578V32.4865C20.2981 33.411 21.0842 34.099 22.0038 34.099C22.9476 34.099 23.7337 33.411 23.8213 32.4865V10.578C23.9088 9.9115 23.5826 9.24285 22.9914 8.8795ZM12.7657 15.9315C12.1745 15.566 11.4278 15.566 10.8388 15.9315C10.2454 16.297 9.91914 16.9614 9.98483 17.63V32.4865C10.0702 33.411 10.8585 34.099 11.8 34.099C12.7438 34.099 13.5299 33.411 13.6175 32.4865V17.63C13.6853 16.9614 13.3547 16.297 12.7657 15.9315ZM33.0397 23.736C32.4507 23.3705 31.7062 23.3705 31.0931 23.736C30.4997 24.1015 30.1734 24.7444 30.261 25.4345V32.4865C30.3486 33.411 31.1347 34.099 32.0784 34.099C32.9981 34.099 33.7842 33.411 33.8959 32.4865V25.4345C33.9594 24.7444 33.6331 24.1015 33.0397 23.736Z" fill="#058E6E"/>
+                        </svg></div>
+                    <div class="w-56 h-28 bg-white rounded-[21px] flex justify-center items-center flex-col gap-2">
+                        <h1 class="font-[600]">200+ Tutors Online</h1>
+                        <div class="flex items-center justify-center">
+                            <!-- Avatar 1 -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden">
+                                <img src="images/Ellipse 3.png" class="w-full h-full object-cover" />
+                            </div>
+                            <!-- Avatar 2 -->
+                            <div class="-ml-3 w-10 h-10 rounded-full overflow-hidden">
+                                <img src="images/Ellipse 4.png" class="w-full h-full object-cover" />
+                            </div>
+                            <!-- Avatar 3 -->
+                            <div class="-ml-3 w-10 h-10 rounded-full overflow-hidden">
+                                <img src="images/Ellipse 5.png" class="w-full h-full object-cover" />
+                            </div>
+                            <!-- Avatar 4 -->
+                            <div class="-ml-3 w-10 h-10 rounded-full overflow-hidden">
+                                <img src="images/Ellipse 6.png" class="w-full h-full object-cover" />
+                            </div>
+                            <!-- Placeholder Avatar -->
+                            <div class="-ml-3 w-10 h-10 rounded-full bg-btn-colors flex items-center justify-center">
+                                <span class="text-white text-sm font-bold">+3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
