@@ -7,10 +7,46 @@
     <title>Tutorify</title>
     <!-- FILE LINK -->
     <link rel="stylesheet" href="output.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <!-- STYLE -->
     <style>
         .clip-triangle {
             clip-path: polygon(0 100%, 100% 100%, 100% 0);
+        }
+
+        /* SWIPER */
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: start !important;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-pagination {
+            position: static;
+            text-align: start;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .swiper-pagination-bullet {
+            background: #FF922F;
         }
     </style>
     </style>
@@ -361,7 +397,6 @@
     </section>
 
     <!-- HOW ITS WORK -->
-
     <section class="py-20 h-full">
         <div class="container mx-auto h-full">
             <div class="flex items-end justify-between flex-col lg:flex-row">
@@ -446,11 +481,379 @@
                         </div>
                         <!-- TRAINGLE PATH -->
                         <div
-                            class="absolute bottom-[-13px] right-[-13px] w-[200px] h-[200px] bg-primary rounded-[15px] clip-triangle">
+                            class="absolute bottom-[-13px] right-[-13px] w-[200px] h-[200px] bg-primary rounded-[15px] clip-triangle shadow-custom-triangle">
                         </div>
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SWIPER SECTION -->
+    <section class="py-20 h-full">
+        <div class="container mx-auto h-full">
+            <div class="flex justify-between items-center h-full">
+                <!-- left side -->
+                <div class="font-dm w-full h-full">
+                    <h1 class="text-primary font-dm font-[700] text-4xl w-[463px] leading-[3.5rem]">Edu Smart it's about
+                        mastering a timeless skill</h1>
+
+                    <div class="text-[16px] text-light-blue w-[529px] mt-8">
+                        <p>cultivating new perspectives, and connecting with fascinating people
+                            from around the world.</p>
+                    </div>
+
+                </div>
+
+                <!-- right side -->
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flex w-full gap-3">
+                                <div class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="29" viewBox="0 0 41 29"
+                                        fill="none">
+                                        <path
+                                            d="M0.77 28.99L12.47 -6.19888e-06H20.27L12.99 28.99H0.77ZM21.05 28.99L32.88 -6.19888e-06H40.68L33.27 28.99H21.05Z"
+                                            fill="#FB9C46" />
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                    </div>
+                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
+                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                                you to
+                                                master a foreign
+                                                language,
+                                                it is important for us to grow and engage with our students</i></p>
+                                    </div>
+
+                                    <div class="flex justify-between items-center py-5">
+                                        <div><img src="images/Photo.png" alt=""></div>
+                                        <div class="font-dm w-[70%]">
+                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing Executive,
+                                                Hypebeast</p>
+                                        </div>
+                                        <div class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex w-full gap-3">
+                                <div class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="29" viewBox="0 0 41 29"
+                                        fill="none">
+                                        <path
+                                            d="M0.77 28.99L12.47 -6.19888e-06H20.27L12.99 28.99H0.77ZM21.05 28.99L32.88 -6.19888e-06H40.68L33.27 28.99H21.05Z"
+                                            fill="#FB9C46" />
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                    </div>
+                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
+                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                                you to
+                                                master a foreign
+                                                language,
+                                                it is important for us to grow and engage with our students</i></p>
+                                    </div>
+
+                                    <div class="flex justify-between items-center py-5">
+                                        <div><img src="images/Photo.png" alt=""></div>
+                                        <div class="font-dm w-[70%]">
+                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing Executive,
+                                                Hypebeast</p>
+                                        </div>
+                                        <div class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex w-full gap-3">
+                                <div class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="29" viewBox="0 0 41 29"
+                                        fill="none">
+                                        <path
+                                            d="M0.77 28.99L12.47 -6.19888e-06H20.27L12.99 28.99H0.77ZM21.05 28.99L32.88 -6.19888e-06H40.68L33.27 28.99H21.05Z"
+                                            fill="#FB9C46" />
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                    </div>
+                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
+                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                                you to
+                                                master a foreign
+                                                language,
+                                                it is important for us to grow and engage with our students</i></p>
+                                    </div>
+
+                                    <div class="flex justify-between items-center py-5">
+                                        <div><img src="images/Photo.png" alt=""></div>
+                                        <div class="font-dm w-[70%]">
+                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing Executive,
+                                                Hypebeast</p>
+                                        </div>
+                                        <div class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex w-full gap-3">
+                                <div class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="29" viewBox="0 0 41 29"
+                                        fill="none">
+                                        <path
+                                            d="M0.77 28.99L12.47 -6.19888e-06H20.27L12.99 28.99H0.77ZM21.05 28.99L32.88 -6.19888e-06H40.68L33.27 28.99H21.05Z"
+                                            fill="#FB9C46" />
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                    </div>
+                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
+                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                                you to
+                                                master a foreign
+                                                language,
+                                                it is important for us to grow and engage with our students</i></p>
+                                    </div>
+
+                                    <div class="flex justify-between items-center py-5">
+                                        <div><img src="images/Photo.png" alt=""></div>
+                                        <div class="font-dm w-[70%]">
+                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing Executive,
+                                                Hypebeast</p>
+                                        </div>
+                                        <div class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex w-full gap-3">
+                                <div class="flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="29" viewBox="0 0 41 29"
+                                        fill="none">
+                                        <path
+                                            d="M0.77 28.99L12.47 -6.19888e-06H20.27L12.99 28.99H0.77ZM21.05 28.99L32.88 -6.19888e-06H40.68L33.27 28.99H21.05Z"
+                                            fill="#FB9C46" />
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path
+                                                d="M8.09375 1.5625L6.0625 5.71875L1.46875 6.375C0.65625 6.5 0.34375 7.5 0.9375 8.09375L4.21875 11.3125L3.4375 15.8438C3.3125 16.6562 4.1875 17.2812 4.90625 16.9062L9 14.75L13.0625 16.9062C13.7812 17.2812 14.6562 16.6562 14.5312 15.8438L13.75 11.3125L17.0312 8.09375C17.625 7.5 17.3125 6.5 16.5 6.375L11.9375 5.71875L9.875 1.5625C9.53125 0.84375 8.46875 0.8125 8.09375 1.5625Z"
+                                                fill="#FAAD13" />
+                                        </svg>
+                                    </div>
+                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
+                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                                you to
+                                                master a foreign
+                                                language,
+                                                it is important for us to grow and engage with our students</i></p>
+                                    </div>
+
+                                    <div class="flex justify-between items-center py-5">
+                                        <div><img src="images/Photo.png" alt=""></div>
+                                        <div class="font-dm w-[70%]">
+                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing Executive,
+                                                Hypebeast</p>
+                                        </div>
+                                        <div class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -461,21 +864,25 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Swiper JS -->
     <script src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-nextt',
+                prevEl: '.swiper-button-previous',
+            },
+        });
+    </script>
 </body>
 
 </html>

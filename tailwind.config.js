@@ -18,9 +18,11 @@ module.exports = {
         'custom-orange': '0px 1.33px 17.5px 0px #FB9C4615, 0px 2.88px 18.48px 0px #FB9C460F, 0px 9px 121px 0px #FB9C463B',
         'custom-hero': '0px 0.5px 44.7px 0px #FF922F13, 0px 4px 357px 0px #FF922F26',
         'custom-green': '0px -2px 128px 0px #058E6E24',
+        'custom-triangle': '0px 22px 0px 0px #FB9C4612',
       },
       fontFamily: {
         'poppins': ['Poppins'],
+        'dm': ['DM Sans'],
       },
       colors: {
         'primary': '#FF922F',
@@ -32,6 +34,7 @@ module.exports = {
         'rounded-bg': '#F6F6F6',
         'rounded-text': '#8D8D8D',
         'light-black': '#393939',
+        'light-blue': '#90A3B4',
         'lesson-circle': 'rgba(255, 146, 47, 0.5)',
       },
       screens: {
