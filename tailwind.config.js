@@ -29,6 +29,7 @@ module.exports = {
         'primary': '#FF922F',
         'secondary': '#407F55',
         'bottom-border': '#C4C4C4',
+        'footer': '#F2BF62',
         'texts': '#6C6C6C',
         'btn-colors': '#058E6E',
         'lesson-bg': '#F0D9CA',
