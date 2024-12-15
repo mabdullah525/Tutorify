@@ -761,6 +761,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.ml-4{
+  margin-left: 1rem;
+}
+
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -775,6 +779,10 @@ video {
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
 }
 
 .mt-7{
@@ -913,6 +921,10 @@ video {
   width: 2.25rem;
 }
 
+.w-96{
+  width: 24rem;
+}
+
 .w-\[102px\]{
   width: 102px;
 }
@@ -959,6 +971,10 @@ video {
 
 .w-\[586px\]{
   width: 586px;
+}
+
+.w-\[60\%\]{
+  width: 60%;
 }
 
 .w-\[600px\]{
@@ -1035,6 +1051,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
 .gap-12{
   gap: 3rem;
 }
@@ -1063,6 +1083,12 @@ video {
   gap: 50px;
 }
 
+.-space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(-1rem * var(--tw-space-x-reverse));
+  margin-left: calc(-1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1089,6 +1115,10 @@ video {
 
 .rounded-\[49px\]{
   border-radius: 49px;
+}
+
+.rounded-\[4px\]{
+  border-radius: 4px;
 }
 
 .rounded-full{
@@ -1176,6 +1206,10 @@ video {
   background-image: linear-gradient(139.15deg, #F1C365 7.67%, #F6AE54 40.13%, #FF922F 59.18%);
 }
 
+.bg-orange-gradient{
+  background-image: linear-gradient(270.04deg, #F1BF62 0.05%, #FF912E 97.84%);
+}
+
 .fill-black{
   fill: #000;
 }
@@ -1183,6 +1217,10 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-10{
+  padding: 2.5rem;
 }
 
 .p-5{
@@ -1204,6 +1242,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1222,6 +1265,15 @@ video {
 .py-\[8px\]{
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pt-10{
@@ -1298,6 +1350,10 @@ video {
 
 .font-\[400\]{
   font-weight: 400;
+}
+
+.font-\[500\]{
+  font-weight: 500;
 }
 
 .font-\[600\]{
@@ -1377,6 +1433,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.underline{
+  text-decoration-line: underline;
+}
+
 .shadow-custom-green{
   --tw-shadow: 0px -2px 128px 0px #058E6E24;
   --tw-shadow-colored: 0px -2px 128px 0px var(--tw-shadow-color);
@@ -1425,6 +1485,51 @@ video {
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.before\:absolute::before{
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:inset-0::before{
+  content: var(--tw-content);
+  inset: 0px;
+}
+
+.before\:rounded-lg::before{
+  content: var(--tw-content);
+  border-radius: 0.5rem;
+}
+
+.before\:bg-\[url\(\'images\/waves\.png\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('images/waves.png');
+}
+
+.before\:bg-cover::before{
+  content: var(--tw-content);
+  background-size: cover;
+}
+
+.before\:bg-center::before{
+  content: var(--tw-content);
+  background-position: center;
+}
+
+.before\:bg-right::before{
+  content: var(--tw-content);
+  background-position: right;
+}
+
+.before\:bg-no-repeat::before{
+  content: var(--tw-content);
+  background-repeat: no-repeat;
+}
+
+.before\:content-\[\'\'\]::before{
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 .after\:block::after{

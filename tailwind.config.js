@@ -12,6 +12,7 @@ module.exports = {
       backgroundImage: {
         // Define a custom linear gradient
         'custom-gradient': 'linear-gradient(139.15deg, #F1C365 7.67%, #F6AE54 40.13%, #FF922F 59.18%)',
+        'orange-gradient': 'linear-gradient(270.04deg, #F1BF62 0.05%, #FF912E 97.84%)',
       },
       boxShadow: {
         'custom-multi': '0px -0.24px 3.06px 0px #0000000D, 0px -0.61px 7.73px 0px #00000013, 0px -1.24px 15.77px 0px #00000018, 0px -2.56px 32.49px 0px #0000001E, 0px -7px 89px 0px #0000002B',
