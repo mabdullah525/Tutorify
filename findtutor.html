@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Tutor</title>
+    <!-- FILE LINK -->
+    <link rel="stylesheet" href="output.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="container">
+
+        <header class='flex  font-poppins min-h-[75px] tracking-wide relative z-50 border-b border-bottom-border'>
+            <div class='flex flex-wrap items-center gap-12 w-full mx-auto font-[700] text-lg'>
+                <a href="javascript:void(0)">Tutorify
+                </a>
+
+                <div id="collapseMenu"
+                    class='max-lg:hidden lg:!flex lg:ml-auto max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+                    <button id="toggleClose"
+                        class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
+                            viewBox="0 0 320.591 320.591">
+                            <path
+                                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                                data-original="#000000"></path>
+                            <path
+                                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+
+                    <ul
+                        class='lg:flex items-center gap-[50px] max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                        <li class='mb-6 hidden max-lg:block'>
+                            <a href="index.html">Tutorify
+                            </a>
+                        </li>
+                        <li class='max-lg:border-b max-lg:py-3 px-3'>
+                            <a href='index.html'
+                                class='relative after:block after:w-full after:h-[3px] hover:text-primary after:bg-primary  after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300  text-[16px] font-[600] font-Poppins'>Home</a>
+                        </li>
+                        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='relative after:block after:w-full  after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-black text-[16px] font-[600] font-Poppins'>Lessons</a>
+                        </li>
+                        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='findtutor.html'
+                                class='relative after:block after:w-[70%] after:rounded-[5px] after:h-[3px] text-primary after:bg-primary  active:scale-x-0 hover:after:scale-x-100 transition-transform duration-300  text-[16px] font-[600] font-Poppins flex flex-col justify-center items-center'>Find
+                                Tutors</a>
+                        </li>
+                        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='relative after:block after:w-full after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-black text-[16px] font-[600] font-Poppins'>About
+                                Us</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class='flex gap-[50px]  items-center max-lg:ml-auto'>
+                    <button
+                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-secondary hover:text-white'>Login</button>
+                    <button
+                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-primary hover:text-white '>Sign
+                        up</button>
+
+                    <button id="toggleOpen" class='lg:hidden'>
+                        <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- SEARCH BARS -->
+    <section class="py-10">
+        <div class="container">
+            <div class="flex gap-12 items-center font-poppins basis-[55%]">
+                <div class="flex items-center bg-white shadow-input-shadow rounded-[10px] w-full h-[66px] px-5">
+                    <!-- Search Icon and Input 1 -->
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path
+                                d="M21.8887 21L17.4027 16.506L21.8887 21ZM19.8887 10.5C19.8887 12.7543 18.9931 14.9163 17.3991 16.5104C15.805 18.1045 13.643 19 11.3887 19C9.13433 19 6.97232 18.1045 5.37826 16.5104C3.78421 14.9163 2.88867 12.7543 2.88867 10.5C2.88867 8.24566 3.78421 6.08365 5.37826 4.48959C6.97232 2.89553 9.13433 2 11.3887 2C13.643 2 15.805 2.89553 17.3991 4.48959C18.9931 6.08365 19.8887 8.24566 19.8887 10.5V10.5Z"
+                                stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        <input type="text" placeholder="Lessons Name"
+                            class="focus:outline-none pl-2 text-gray-600 placeholder-border-col text-[14px]" />
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="border-l h-6 mx-4 border-border-col"></div>
+
+                    <!-- Input 2 -->
+                    <input type="text" placeholder="Tutor Name"
+                        class="w-full focus:outline-none text-gray-600 placeholder-border-col text-[14px]" />
+
+                    <!-- Search Button -->
+                    <button
+                        class="bg-input w-full text-white px-8  py-3 rounded-[10px] hover:bg-black focus:outline-none flex gap-2 justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        Search
+                    </button>
+                </div>
+
+                <div class="basis-[60%] shadow-input-shadow rounded-[10px]">
+
+                    <form class="flex gap-1 items-center rounded-[10px]  bg-white  w-full h-[66px] px-5">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="13" viewBox="0 0 20 13" fill="none">
+                                <path d="M10 0C12.0683 0 14.0293 0.569226 15.7366 1.62306C17.4439 2.66921 18.8976 4.19996 19.9415 6.11533C20.0195 6.26149 20.0195 6.43071 19.9415 6.56917C17.8537 10.3999 14.1366 12.6922 10 12.6922H9.99024C5.86341 12.6922 2.14634 10.3999 0.0585366 6.56917C-0.0195122 6.43071 -0.0195122 6.26149 0.0585366 6.11533C2.14634 2.2846 5.86341 0 9.99024 0H10ZM10 3.2692C7.8439 3.2692 6.09756 4.64611 6.09756 6.3461C6.09756 8.03839 7.8439 9.4153 10 9.4153C12.1463 9.4153 13.8927 8.03839 13.8927 6.3461C13.8927 4.64611 12.1463 3.2692 10 3.2692ZM10.0012 4.42135C11.3378 4.42135 12.4304 5.28288 12.4304 6.34441C12.4304 7.39824 11.3378 8.25978 10.0012 8.25978C8.65483 8.25978 7.56215 7.39824 7.56215 6.34441C7.56215 6.21364 7.58166 6.09056 7.61093 5.96749H7.65971C8.74263 5.96749 9.62068 5.29057 9.65971 4.44442C9.76702 4.42904 9.8841 4.42135 10.0012 4.42135Z" fill="#CCCCCC"/>
+                                </svg>
+                        </div>
+                        <select id="countries"
+                            class="w-full focus:outline-none placeholder-border-col text-[14px] text-border-col">
+                            <option selected>Popular Lesson</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

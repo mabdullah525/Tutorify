@@ -20,6 +20,7 @@ module.exports = {
         'custom-hero': '0px 0.5px 44.7px 0px #FF922F13, 0px 4px 357px 0px #FF922F26',
         'custom-green': '0px -2px 128px 0px #058E6E24',
         'custom-triangle': '0px 22px 0px 0px #FB9C4612',
+        'input-shadow': '0px -1.24px 15.77px 0px #00000018, 0px -2.56px 32.49px 0px #0000001E',
       },
       fontFamily: {
         'poppins': ['Poppins'],
@@ -28,9 +29,11 @@ module.exports = {
       colors: {
         'primary': '#FF922F',
         'secondary': '#407F55',
+        'input': '#FB9C46',
         'bottom-border': '#C4C4C4',
         'footer': '#F2BF62',
         'texts': '#6C6C6C',
+        'border-col': '#CCCCCC',
         'btn-colors': '#058E6E',
         'lesson-bg': '#F0D9CA',
         'rounded-bg': '#F6F6F6',
