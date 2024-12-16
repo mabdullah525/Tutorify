@@ -36,6 +36,7 @@ module.exports = {
         'footer': '#F2BF62',
         'texts': '#6C6C6C',
         'border-col': '#CCCCCC',
+        'check-purple': '#D3175B',
         'btn-colors': '#058E6E',
         'lesson-bg': '#F0D9CA',
         'rounded-bg': '#F6F6F6',
