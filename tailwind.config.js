@@ -21,6 +21,7 @@ module.exports = {
         'custom-green': '0px -2px 128px 0px #058E6E24',
         'custom-triangle': '0px 22px 0px 0px #FB9C4612',
         'input-shadow': '0px -1.24px 15.77px 0px #00000018, 0px -2.56px 32.49px 0px #0000001E',
+        'button-shadow': '0px -0.24px 3.06px 0px #0000000D, 0px -0.61px 7.73px 0px #00000013, 0px -1.24px 15.77px 0px #00000018',
       },
       fontFamily: {
         'poppins': ['Poppins'],
@@ -29,6 +30,7 @@ module.exports = {
       colors: {
         'primary': '#FF922F',
         'secondary': '#407F55',
+        'green': '#407F55',
         'input': '#FB9C46',
         'bottom-border': '#C4C4C4',
         'footer': '#F2BF62',
@@ -40,6 +42,7 @@ module.exports = {
         'rounded-text': '#8D8D8D',
         'light-black': '#393939',
         'light-blue': '#90A3B4',
+        'btn-col': '#979797',
         'lesson-circle': 'rgba(255, 146, 47, 0.5)',
       },
       screens: {
