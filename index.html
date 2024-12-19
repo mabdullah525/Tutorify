@@ -59,10 +59,10 @@
 
 <body>
     <!-- NAVBAR -->
-    <div class="container">
+    <div class="lg:container lg:px-[2rem] xs:px-xs-1">
 
         <header class='flex  font-poppins min-h-[75px] tracking-wide relative z-50 border-b border-bottom-border'>
-            <div class='flex flex-wrap items-center gap-12 w-full mx-auto font-[700] text-lg'>
+            <div class='flex flex-wrap items-center gap-12 text-light-black w-full mx-auto font-[700] text-lg'>
                 <a href="javascript:void(0)">Tutorify
                 </a>
 
@@ -108,16 +108,17 @@
                 </div>
                 <div class='flex gap-[50px]  items-center max-lg:ml-auto'>
                     <button
-                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-secondary hover:text-white'>Login</button>
+                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-secondary hover:text-white lg:block hidden'>Login</button>
                     <button
-                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-primary hover:text-white '>Sign
+                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-primary hover:text-white lg:block hidden'>Sign
                         up</button>
 
                     <button id="toggleOpen" class='lg:hidden'>
-                        <svg class="w-7 h-7" fill="#333" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                            <path
+                                d="M18 15.7034H0V13.238H18V15.7034ZM18 9.53993H0V7.07456H18V9.53993ZM18 3.3765H0V0.911133H18V3.3765Z"
+                                fill="#FB9C46" />
+                        </svg>
                         </svg>
                     </button>
                 </div>
@@ -126,141 +127,164 @@
     </div>
 
     <!-- HERO SECTION -->
-    <div class="container font-poppins font-[600] h-full">
-        <div class="flex justify-between items-center h-full pt-14">
-            <!-- left side -->
-            <div>
-                <div class="flex items-center gap-5">
-                    <h1 class="text-primary text-[16px]">We are The Best</h1>
-                    <div class="w-32 bg-primary h-[1px]"></div>
-
-                </div>
-                <div class="text-[55px] font-[700] pt-9">
-                    <h1 class="leading-[78px]">Learn Frome Home <br>
-                        With <span class="text-primary">The Best</span> <br>
-                        Online Languange Tutors</h1>
-                </div>
-                <div class="text-texts font-[400] text-[16px] pt-10">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-                        Id interdum dui mollis . Suspendisse nulla :</p>
-                </div>
-                <div class="mt-7">
-                    <a href="#"
-                        class="text-white bg-btn-colors hover:bg-black hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-12 py-3 inline-block text-[16px]"><button>
-                            Try Free Lessons
-                        </button></a>
-                </div>
-            </div>
-            <!-- right side -->
-            <div class="relative">
-                <div class="relative rounded-[204px] bg-custom-gradient"><img src="images/hero-img.png">
-                    <div class="absolute top-28 left-[-53px]"><img src="images/china (3).png" alt=""></div>
-                    <div class="absolute top-[-11px] right-[17px]"><img src="images/china (1).png" alt=""></div>
-                    <div class="absolute bottom-56 right-[-50px]"><img src="images/china (2).png" alt=""></div>
-                </div>
-                <!-- small logo sections -->
-                <div class="absolute bottom-14 left-[-125px] rounded-[21px] shadow-custom-hero">
-                    <div class="absolute top-[-15px] left-[-20px]"><svg xmlns="http://www.w3.org/2000/svg" width="44"
-                            height="43" viewBox="0 0 44 43" fill="none">
-                            <path
-                                d="M32.12 0C39.5671 0 43.7712 4.14735 43.7931 11.4595V31.5405C43.7931 38.8505 39.5671 43 32.12 43H11.6709C4.22384 43 0 38.8505 0 31.5405V11.4595C0 4.14735 4.22384 0 11.6709 0H32.12ZM22.9914 8.8795C22.3761 8.514 21.6316 8.514 21.0426 8.8795C20.4492 9.24285 20.1229 9.9115 20.1864 10.578V32.4865C20.2981 33.411 21.0842 34.099 22.0038 34.099C22.9476 34.099 23.7337 33.411 23.8213 32.4865V10.578C23.9088 9.9115 23.5826 9.24285 22.9914 8.8795ZM12.7657 15.9315C12.1745 15.566 11.4278 15.566 10.8388 15.9315C10.2454 16.297 9.91914 16.9614 9.98483 17.63V32.4865C10.0702 33.411 10.8585 34.099 11.8 34.099C12.7438 34.099 13.5299 33.411 13.6175 32.4865V17.63C13.6853 16.9614 13.3547 16.297 12.7657 15.9315ZM33.0397 23.736C32.4507 23.3705 31.7062 23.3705 31.0931 23.736C30.4997 24.1015 30.1734 24.7444 30.261 25.4345V32.4865C30.3486 33.411 31.1347 34.099 32.0784 34.099C32.9981 34.099 33.7842 33.411 33.8959 32.4865V25.4345C33.9594 24.7444 33.6331 24.1015 33.0397 23.736Z"
-                                fill="#058E6E" />
-                        </svg></div>
-                    <div class="w-56 h-28 bg-white rounded-[21px] flex justify-center items-center flex-col gap-2">
-                        <h1 class="font-[600]">200+ Tutors Online</h1>
-                        <div class="flex items-center justify-center">
-                            <!-- Avatar 1 -->
-                            <div class="w-10 h-10 rounded-full overflow-hidden">
-                                <img src="images/Ellipse 3.png" class="w-full h-full object-cover" />
-                            </div>
-                            <!-- Avatar 2 -->
-                            <div class="-ml-3 w-10 h-10 rounded-full overflow-hidden">
-                                <img src="images/Ellipse 4.png" class="w-full h-full object-cover" />
-                            </div>
-                            <!-- Avatar 3 -->
-                            <div class="-ml-3 w-10 h-10 rounded-full overflow-hidden">
-                                <img src="images/Ellipse 5.png" class="w-full h-full object-cover" />
-                            </div>
-                            <!-- Avatar 4 -->
-                            <div class="-ml-3 w-10 h-10 rounded-full overflow-hidden">
-                                <img src="images/Ellipse 6.png" class="w-full h-full object-cover" />
-                            </div>
-                            <!-- Placeholder Avatar -->
-                            <div class="-ml-3 w-10 h-10 rounded-full bg-btn-colors flex items-center justify-center">
-                                <span class="text-white text-sm font-bold">+3</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- WHAT WE OFFER SECTION -->
-    <section class="py-20">
-        <div class="container">
-            <div class="flex items-center">
+    <section class="">
+        <div class="lg:container lg:px-[2rem] xs:px-xs-1  font-poppins font-[600] h-full">
+            <div class="flex justify-between xs:gap-12 lg:gap-0 lg:flex-row flex-col items-center h-full lg:pt-14">
                 <!-- left side -->
-                <div class="font-poppins font-[600] basis-[40%]">
-                    <h1 class="text-primary ">What do you want to learn ?</h1>
-                    <h1 class="text-5xl mt-3">What We Offer</h1>
-                    <div class="flex items-center gap-5 mt-8">
-                        <h1 class="text-primary text-[18px]">I want to learn </h1>
-                        <div class="w-32 bg-primary h-[1px]"></div>
+                <div>
+                    <div class="flex items-center gap-5 xs:mt-7 lg:mt-0">
+                        <h1 class="text-primary text-[16px]">We are The Best</h1>
+                        <div class="w-32 xs:w-24 bg-primary h-[1px]"></div>
+
+                    </div>
+                    <div class="lg:text-[55px] xs:text-[30px] font-[700] lg:pt-9 xs:pt-5">
+                        <h1 class="lg:leading-[78px] lg:w-[656px]">Learn Frome Home
+                            With <span class="text-primary">The Best</span>
+                            Online Languange Tutors</h1>
+                    </div>
+                    <div class="text-texts font-[400] lg:text-[16px] xs:text-[14px] pt-10">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                            Id interdum dui mollis . Suspendisse nulla :</p>
+                    </div>
+                    <div class="mt-7">
+                        <a href="#"
+                            class="text-white bg-btn-colors shadow-custom-g-btn hover:bg-black hover:text-white transition-all ease-in-out duration-300 rounded-2xl lg:px-12 xs:px-10 lg:py-3 xs:py-4 inline-block text-[16px]"><button>
+                                Try Free Lessons
+                            </button></a>
                     </div>
                 </div>
-
                 <!-- right side -->
-                <div class="font-poppins basis-[60%]">
-                    <p class="w-[700px] text-texts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna
-                        nec faucibus ridiculus placerat ipsum. Volutpat eget ut vitae amet ullamcorper et, ante
-                        venenatis.</p>
-                    <div class="flex justify-between items-center mt-8">
-                        <div class="shadow-custom-multi rounded-full"><img src="images/germany (1).png"></div>
-                        <div class="shadow-custom-multi rounded-full"><img src="images/china.png"></div>
-                        <div class="shadow-custom-multi rounded-full"><img src="images/france.png"></div>
-                        <div class="shadow-custom-multi rounded-full"><img src="images/vietnam.png"></div>
-                        <div class="shadow-custom-multi rounded-full"><img src="images/luxembourg.png"></div>
-                        <div class="shadow-custom-multi rounded-full"><img src="images/pakistan.png"></div>
-                        <div class="text-primary font-[600] flex gap-4 items-center">
-                            <a href=""> View All</a>
-                            <div><svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14"
-                                    fill="none">
-                                    <path
-                                        d="M11.4024 8.3195C11.3365 8.38717 11.0876 8.6765 10.8557 8.9145C9.49643 10.4113 5.9504 12.8613 4.09441 13.6092C3.81255 13.7293 3.09993 13.9837 2.71919 14C2.35436 14 2.00658 13.916 1.6747 13.7457C1.261 13.5077 0.929128 13.1332 0.74728 12.691C0.630216 12.3842 0.448368 11.466 0.448368 11.4497C0.26652 10.4452 0.166504 8.813 0.166504 7.00933C0.166504 5.29083 0.26652 3.72517 0.415408 2.7055C0.432456 2.68917 0.614304 1.54817 0.8132 1.15733C1.17803 0.443334 1.89065 0 2.65327 0H2.71919C3.21586 0.0175009 4.26035 0.460835 4.26035 0.477167C6.01632 1.22617 9.48052 3.556 10.8728 5.10417C10.8728 5.10417 11.2649 5.502 11.4354 5.7505C11.7013 6.1075 11.8332 6.54967 11.8332 6.99183C11.8332 7.48533 11.6843 7.945 11.4024 8.3195Z"
-                                        fill="#FB9C46" />
-                                </svg></div>
+                <div class="relative">
+                    <div class="relative w-full rounded-[204px] bg-custom-gradient"><img src="images/hero-img.png"
+                            class="xs:w-[248px] lg:w-full">
+                        <div class="absolute lg:top-28 xs:top-16 xs:left-[-0.7rem] lg:left-[-53px]"><img
+                                src="images/china (3).png" class="xs:w-12 lg:w-full"></div>
+                        <div class="absolute lg:top-[-11px] lg:right-[17px] xs:top-2 xs:right-[0.5rem]"><img
+                                src="images/china (1).png" class="xs:w-12 lg:w-full"></div>
+                        <div class="absolute lg:bottom-56 lg:right-[-50px] xs:bottom-[7.5rem] xs:right-[-1.5rem]"><img
+                                src="images/china (2).png" class="xs:w-12 lg:w-full"></div>
+                    </div>
+                    <!-- small logo sections -->
+                    <div
+                        class="absolute lg:bottom-14 lg:left-[-125px] xs:bottom-12 xs:left-[-2.5rem] rounded-[21px] shadow-custom-hero">
+                        <div class="absolute lg:top-[-15px] lg:left-[-78px] xs:top-[-20px] xs:left-[-12px]"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="44" height="43" viewBox="0 0 44 43"
+                                fill="none" class="xs:w-5 lg:w-44">
+                                <path
+                                    d="M32.12 0C39.5671 0 43.7712 4.14735 43.7931 11.4595V31.5405C43.7931 38.8505 39.5671 43 32.12 43H11.6709C4.22384 43 0 38.8505 0 31.5405V11.4595C0 4.14735 4.22384 0 11.6709 0H32.12ZM22.9914 8.8795C22.3761 8.514 21.6316 8.514 21.0426 8.8795C20.4492 9.24285 20.1229 9.9115 20.1864 10.578V32.4865C20.2981 33.411 21.0842 34.099 22.0038 34.099C22.9476 34.099 23.7337 33.411 23.8213 32.4865V10.578C23.9088 9.9115 23.5826 9.24285 22.9914 8.8795ZM12.7657 15.9315C12.1745 15.566 11.4278 15.566 10.8388 15.9315C10.2454 16.297 9.91914 16.9614 9.98483 17.63V32.4865C10.0702 33.411 10.8585 34.099 11.8 34.099C12.7438 34.099 13.5299 33.411 13.6175 32.4865V17.63C13.6853 16.9614 13.3547 16.297 12.7657 15.9315ZM33.0397 23.736C32.4507 23.3705 31.7062 23.3705 31.0931 23.736C30.4997 24.1015 30.1734 24.7444 30.261 25.4345V32.4865C30.3486 33.411 31.1347 34.099 32.0784 34.099C32.9981 34.099 33.7842 33.411 33.8959 32.4865V25.4345C33.9594 24.7444 33.6331 24.1015 33.0397 23.736Z"
+                                    fill="#058E6E" />
+                            </svg></div>
+                        <div
+                            class="lg:w-56 lg:h-28 xs:w-24 xs:h-14 bg-white rounded-[21px] flex justify-center items-center flex-col gap-2">
+                            <h1 class="font-[600] xs:text-[8px] lg:text-[16px]">200+ Tutors Online</h1>
+                            <div class="flex items-center justify-center">
+                                <!-- Avatar 1 -->
+                                <div class="lg:w-10 lg:h-10 xs:w-5 xs:h-5 rounded-full overflow-hidden">
+                                    <img src="images/Ellipse 3.png" class="w-full h-full object-cover" />
+                                </div>
+                                <!-- Avatar 2 -->
+                                <div
+                                    class="lg:-ml-3 xs:-ml-1 lg:w-10 lg:h-10 xs:w-5 xs:h-5 rounded-full overflow-hidden">
+                                    <img src="images/Ellipse 4.png" class="w-full h-full object-cover" />
+                                </div>
+                                <!-- Avatar 3 -->
+                                <div
+                                    class="lg:-ml-3 xs:-ml-1 lg:w-10 lg:h-10 xs:w-5 xs:h-5 rounded-full overflow-hidden">
+                                    <img src="images/Ellipse 5.png" class="w-full h-full object-cover" />
+                                </div>
+                                <!-- Avatar 4 -->
+                                <div
+                                    class="lg:-ml-3 xs:-ml-1 lg:w-10 lg:h-10 xs:w-5 xs:h-5 rounded-full overflow-hidden">
+                                    <img src="images/Ellipse 6.png" class="w-full h-full object-cover" />
+                                </div>
+                                <!-- Placeholder Avatar -->
+                                <div
+                                    class="lg:-ml-3 xs:-ml-1 lg:w-10 lg:h-10 xs:w-5 xs:h-5 rounded-full bg-btn-colors flex items-center justify-center">
+                                    <span class="text-white lg:text-sm font-bold xs:text-[10px]">+3</span>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
+    <!-- WHAT WE OFFER SECTION -->
+    <section class="py-20">
+        <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Left Side -->
+                <div class="font-poppins w-full font-[600] basis-full md:basis-[40%] xs:text-left md:text-left">
+                    <h1 class="text-primary">What do you want to learn ?</h1>
+                    <h1 class="text-4xl md:text-5xl xs:text-[30px] mt-3">What We Offer</h1>
+                    <div class="flex flex-row justify-start items-center  gap-5 lg:mt-8 xs:mt-3">
+                        <h1 class="text-primary text-[18px]">I want to learn </h1>
+                        <div class="w-16 md:w-32 bg-primary h-[1px]"></div>
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="font-poppins basis-full md:basis-[60%] mt-10 md:mt-0">
+                    <p class="text-texts xs:text=[12px] md:text-left md:w-[700px]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec urna
+                        nec faucibus ridiculus placerat ipsum. Volutpat eget ut vitae amet
+                        ullamcorper et, ante venenatis.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-between items-center mt-8 gap-4">
+                        <div class="shadow-custom-multi rounded-full"><img src="images/germany (1).png"
+                                class="w-12 h-12 md:w-auto md:h-auto"></div>
+                        <div class="shadow-custom-multi rounded-full"><img src="images/china.png"
+                                class="w-12 h-12 md:w-auto md:h-auto"></div>
+                        <div class="shadow-custom-multi rounded-full"><img src="images/france.png"
+                                class="w-12 h-12 md:w-auto md:h-auto"></div>
+                        <div class="shadow-custom-multi rounded-full"><img src="images/vietnam.png"
+                                class="w-12 h-12 md:w-auto md:h-auto"></div>
+                        <div class="shadow-custom-multi rounded-full"><img src="images/luxembourg.png"
+                                class="w-12 h-12 md:w-auto md:h-auto"></div>
+                        <div class="shadow-custom-multi rounded-full"><img src="images/pakistan.png"
+                                class="w-12 h-12 md:w-auto md:h-auto"></div>
+                        <div class="text-primary font-[600] flex gap-2 items-center mt-4 md:mt-0">
+                            <a href="" class="underline">View All</a>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14"
+                                    fill="none">
+                                    <path
+                                        d="M11.4024 8.3195C11.3365 8.38717 11.0876 8.6765 10.8557 8.9145C9.49643 10.4113 5.9504 12.8613 4.09441 13.6092C3.81255 13.7293 3.09993 13.9837 2.71919 14C2.35436 14 2.00658 13.916 1.6747 13.7457C1.261 13.5077 0.929128 13.1332 0.74728 12.691C0.630216 12.3842 0.448368 11.466 0.448368 11.4497C0.26652 10.4452 0.166504 8.813 0.166504 7.00933C0.166504 5.29083 0.26652 3.72517 0.415408 2.7055C0.432456 2.68917 0.614304 1.54817 0.8132 1.15733C1.17803 0.443334 1.89065 0 2.65327 0H2.71919C3.21586 0.0175009 4.26035 0.460835 4.26035 0.477167C6.01632 1.22617 9.48052 3.556 10.8728 5.10417C10.8728 5.10417 11.2649 5.502 11.4354 5.7505C11.7013 6.1075 11.8332 6.54967 11.8332 6.99183C11.8332 7.48533 11.6843 7.945 11.4024 8.3195Z"
+                                        fill="#FB9C46" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- AWESOM LESSON SECTION -->
     <section class="py-20 h-full" id="lesson">
-        <div class="container h-full">
-            <div class="flex justify-between items-center">
+        <div class="lg:container lg:px-[2rem] xs:px-xs-1 h-full">
+            <div class="flex lg:flex-row flex-col justify-between xs:gap-16 lg:gap-0 items-center">
                 <!-- left side -->
                 <div class="font-poppins">
-                    <p class="text-4xl font-[600] w-[586px] leading-[57px]">Purchase your awesome lessons and find your
+                    <p class="lg:text-4xl xs:text-[30px] font-[600] lg:w-[586px] xs:w-[333px] lg:leading-[57px]">Purchase
+                        your awesome lessons and find your
                         tutors </p>
-                    <p class="text-texts text-[16px] w-[555px] mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <p class="text-texts text-[16px] lg:w-[555px] mt-10">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
                         elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan eget aliquet.
                     </p>
                     <div class="flex items-center gap-6">
                         <div class="mt-7">
                             <a href="#"
-                                class="text-white bg-primary font-[600] hover:bg-black hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-5 py-3 inline-block text-[16px]"><button>
+                                class="text-white bg-primary font-[600] hover:bg-black hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-5 py-3 inline-block xs:text-[12px] lg:text-[16px]"><button>
                                     Book Your Lessons
                                 </button></a>
                         </div>
                         <div class="mt-7">
                             <a href="#"
-                                class="text-primary border-[3px] border-primary font-[600] bg-transparent hover:bg-primary hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-5 py-3 inline-block text-[16px]"><button>
+                                class="text-primary border-[3px] border-primary font-[600] bg-transparent hover:bg-primary hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-5 py-3 inline-block xs:text-[12px] lg:text-[16px]"><button>
                                     Find Your Tutors
                                 </button></a>
                         </div>
@@ -269,17 +293,19 @@
                 <!-- right side -->
                 <div class="relative">
                     <div
-                        class="flex justify-center items-center rounded-full border-[5px] border-lesson-circle w-[470px] h-[470px] overflow-hidden">
-                        <div class="bg-lesson-bg w-[370px] h-[370px] rounded-full flex">
+                        class="flex justify-center items-center rounded-full border-[5px] border-lesson-circle lg:w-[470px] lg:h-[470px] xs:w-[289px] xs:h-[289px] overflow-hidden">
+                        <div class="bg-lesson-bg lg:w-[370px] xs:w-[220px] xs:h-[220px] lg:h-[370px] rounded-full flex">
                             <div class="flex">
-                                <img src="images/lesson-img.png" class="h-[420px]">
+                                <img src="images/lesson-img.png" class="lg:h-[420px] xs:h-[248px]">
                             </div>
                         </div>
                     </div>
-                    <div class="absolute bottom-[-30px] left-[-60px]"><img src="images/circle-img.png" alt=""></div>
-                    <div class="absolute top-[-30px] right-[-66px]"><img src="images/circle-img2.png" alt=""></div>
+                    <div class="absolute lg:bottom-[-30px] lg:left-[-60px] xs:hidden lg:block"><img
+                            src="images/circle-img.png" alt=""></div>
+                    <div class="absolute top-[-30px] right-[-66px] xs:hidden lg:block"><img src="images/circle-img2.png"
+                            alt=""></div>
                     <div
-                        class="absolute right-[30px] shadow-custom-multi bottom-[47px] flex justify-center items-center border-[3px] border-white rounded-full w-[60px] h-[60px]">
+                        class="absolute lg:right-[30px] xs:right-0 shadow-custom-multi lg:bottom-[47px] xs:bottom-[28px] flex justify-center items-center border-[3px] border-white rounded-full w-[60px] h-[60px]">
                         <div class="w-[55px] h-[55px] bg-rounded-bg rounded-full flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
                                 fill="none">
@@ -291,7 +317,7 @@
 
                     </div>
                     <div
-                        class="absolute left-[128px] shadow-custom-multi top-[-20px] flex justify-center items-center border-[3px] border-white rounded-full w-[60px] h-[60px]">
+                        class="absolute left-[128px] shadow-custom-multi lg:top-[-20px] xs:top-[-29px] flex justify-center items-center border-[3px] border-white rounded-full w-[60px] h-[60px]">
                         <div class="w-[55px] h-[55px] bg-rounded-bg rounded-full flex justify-center items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21"
                                 fill="none">
@@ -302,7 +328,7 @@
                         </div>
                     </div>
                     <div
-                        class="absolute top-[110px] left-[-65px] w-32 h-20 rounded-[10px] bg-white shadow-custom-orange">
+                        class="absolute lg:top-[110px] xs:top-[67px] lg:left-[-65px] xs:left-[-34px] lg:w-32 lg:h-20 xs:w-[5rem] xs:h-16 rounded-[10px] bg-white shadow-custom-orange">
                         <div class="flex flex-col justify-center items-center h-full ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                 fill="none">
@@ -310,9 +336,9 @@
                                     d="M6.21001 1.8756C6.68251 1.88997 7.14001 1.97247 7.58326 2.12322H7.62751C7.65751 2.13747 7.68001 2.15322 7.69501 2.16747C7.86076 2.22072 8.01751 2.28072 8.16751 2.36322L8.45251 2.49072C8.56501 2.55072 8.70001 2.66247 8.77501 2.70822C8.85001 2.75247 8.93251 2.79822 9.00001 2.84997C9.83326 2.21322 10.845 1.86822 11.8875 1.8756C12.3608 1.8756 12.8333 1.94247 13.2825 2.09322C16.0508 2.99322 17.0483 6.03072 16.215 8.68572C15.7425 10.0425 14.97 11.2807 13.9583 12.2925C12.51 13.695 10.9208 14.94 9.21001 16.0125L9.02251 16.1257L8.82751 16.005C7.11076 14.94 5.51251 13.695 4.05076 12.285C3.04576 11.2732 2.27251 10.0425 1.79251 8.68572C0.945012 6.03072 1.94251 2.99322 4.74076 2.07747C4.95826 2.00247 5.18251 1.94997 5.40751 1.92072H5.49751C5.70826 1.88997 5.91751 1.8756 6.12751 1.8756H6.21001ZM12.8925 4.24572C12.585 4.13997 12.2475 4.30572 12.135 4.62072C12.03 4.93572 12.195 5.28072 12.51 5.39247C12.9908 5.57247 13.3125 6.04572 13.3125 6.56997V6.59322C13.2983 6.76497 13.35 6.93072 13.455 7.05822C13.56 7.18572 13.7175 7.25997 13.8825 7.27572C14.19 7.26747 14.4525 7.02072 14.475 6.70497V6.61572C14.4975 5.56497 13.8608 4.61322 12.8925 4.24572Z"
                                     fill="#FB9C46" />
                             </svg>
-                            <h1 class="text-primary font-[600] font-poppins">1850+
+                            <h1 class="text-primary xs:text-[12px] lg:text-[16px] font-[600] font-poppins">1850+
                             </h1>
-                            <p class="text-rounded-text font-poppins ">
+                            <p class="text-rounded-text xs:text-[12px] lg:text-[16px] font-poppins ">
                                 Lessons</p>
 
                         </div>
@@ -326,10 +352,10 @@
 
     <!-- WHAT WIIL YOU GET -->
     <section class="py-20 h-full">
-        <div class="container mx-auto h-full">
-            <div class="flex items-end flex-col lg:flex-row">
-                <div class="w-full lg:w-1/2 relative">
-                    <div class=" w-[410px] h-[430px] rounded-[49px] bg-lesson-bg">
+        <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto h-full">
+            <div class="flex items-end flex-col-reverse lg:flex-row xs:gap-16 lg:gap-0">
+                <div class="w-full lg:w-1/2 ">
+                    <div class="relative lg:w-[470px] lg:h-[430px] xs:h-[330px] rounded-[49px] bg-lesson-bg">
                         <div class="absolute bottom-0 left-0 right-0 "><img src="images/lady-img.png"
                                 class="rounded-[49px]"></div>
                     </div>
@@ -337,11 +363,11 @@
                 <!-- right side -->
                 <div class="w-full lg:w-1/2 font-poppins">
                     <div class="flex flex-col">
-                        <h1 class="font-[600] text-4xl ">What Will You <span class="text-secondary">Get</span> ?</h1>
-                        <p class="text-texts w-[460px] text-[15px] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        <h1 class="font-[600] lg:text-4xl xs:text-[30px]">What Will You <span class="text-secondary">Get</span> ?</h1>
+                        <p class="text-texts lg:w-[460px] lg:text-[15px] xs:text-[13px] mt-5">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit.
                             Id interdum dui mollis . Suspendisse nulla :</p>
-                        <div class="w-[460px] h-[104px] rounded-2xl shadow-custom-green mt-5">
+                        <div class="lg:w-[460px] lg:h-[104px] rounded-2xl shadow-custom-green mt-5">
                             <div class="flex p-5 gap-5">
                                 <div><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
                                         fill="none">
@@ -350,16 +376,16 @@
                                             fill="#058E6E" />
                                     </svg></div>
                                 <div class="font-poppins">
-                                    <p class=" text-[16px] text-light-black font-[600]">Practice for free with the
+                                    <p class=" lg:text-[15px] xs:text-[13px] text-light-black font-[600]">Practice for free with the
                                         italki community</p>
-                                    <li class="text-[14px] text-gray-400 mt-1">Develop your language skills by building
+                                    <li class="lg:text-[14px] xs:text-[12px] text-gray-400 mt-1">Develop your language skills by building
                                         connections with others...<span class="text-secondary">read more</span></li>
 
                                 </div>
 
                             </div>
                         </div>
-                        <div class="w-[460px] h-[104px] rounded-2xl shadow-custom-green mt-5">
+                        <div class="lg:w-[460px] lg:h-[104px] rounded-2xl shadow-custom-green mt-5">
                             <div class="flex p-5 gap-5">
                                 <div><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
                                         fill="none">
@@ -368,16 +394,16 @@
                                             fill="#058E6E" />
                                     </svg></div>
                                 <div class="font-poppins">
-                                    <p class=" text-[16px] text-light-black font-[600]">Take learning beyond the
+                                    <p class=" lg:text-[16px] xs:text-[13px] text-light-black font-[600]">Take learning beyond the
                                         classroom</p>
-                                    <li class="text-[14px] text-gray-400 mt-1">Learn from certified teachers with proven
+                                    <li class="lg:text-[14px] xs:text-[12px] text-gray-400 mt-1">Learn from certified teachers with proven
                                         experience... <span class="text-secondary">read more</span></li>
 
                                 </div>
 
                             </div>
                         </div>
-                        <div class="w-[460px] h-[104px] rounded-2xl shadow-custom-green mt-5">
+                        <div class="lg:w-[460px] lg:h-[104px] rounded-2xl shadow-custom-green mt-5">
                             <div class="flex p-5 gap-5">
                                 <div><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
                                         fill="none">
@@ -386,9 +412,9 @@
                                             fill="#058E6E" />
                                     </svg></div>
                                 <div class="font-poppins">
-                                    <p class=" text-[16px] text-light-black font-[600]">1-on-1 lessons in more than 150
+                                    <p class=" lg:text-[16px] xs:text-[13px] text-light-black font-[600]">1-on-1 lessons in more than 150
                                         languages</p>
-                                    <li class="text-[14px] text-gray-400 mt-1">Learn from certified teachers with proven
+                                    <li class="lg:text-[14px] xs:text-[12px] text-gray-400 mt-1">Learn from certified teachers with proven
                                         experience... <span class="text-secondary">read more</span></li>
 
                                 </div>
@@ -403,27 +429,27 @@
 
     <!-- HOW ITS WORK -->
     <section class="py-20 h-full">
-        <div class="container mx-auto h-full">
-            <div class="flex items-end justify-between flex-col lg:flex-row">
+        <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto h-full">
+            <div class="flex lg:items-end  lg:justify-between xs:items-center flex-col lg:flex-row xs:gap-16 lg:gap-0">
                 <!-- right side -->
                 <div class="font-poppins">
                     <div class="flex flex-col">
-                        <h1 class="font-[600] text-4xl ">Here’s how it <span class="text-primary">works</span></h1>
-                        <p class="text-texts w-[460px] text-[15px] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        <h1 class="font-[600] lg:text-4xl xs:text-[30px]">Here’s how it <span class="text-primary">works</span></h1>
+                        <p class="text-texts lg:w-[460px] lg:text-[15px] xs:text-[12px] mt-5">Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan
                             eget aliquet.</p>
-                        <div class="w-[600px] h-[86px] rounded-2xl shadow-custom-orange mt-5">
+                        <div class="lg:w-[600px] lg:h-[86px] rounded-2xl shadow-custom-orange mt-5">
                             <div class="flex p-5 gap-5">
-                                <div class="w-11 h-11 bg-primary rounded-full flex justify-center items-center"><svg
+                                <div class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
-                                        fill="none">
+                                        fill="none" class="xs:w-10 lg:w-18">
                                         <path
                                             d="M8.8 14.4913C13.5725 14.4913 17.6 15.2668 17.6 18.2589C17.6 21.252 13.5461 22 8.8 22C4.02861 22 0 21.2245 0 18.2325C0 15.2393 4.05392 14.4913 8.8 14.4913ZM8.8 0C12.033 0 14.6234 2.58943 14.6234 5.82016C14.6234 9.05089 12.033 11.6414 8.8 11.6414C5.56809 11.6414 2.97662 9.05089 2.97662 5.82016C2.97662 2.58943 5.56809 0 8.8 0Z"
                                             fill="white" />
                                     </svg></div>
                                 <div class="font-poppins">
-                                    <p class=" text-[18px] text-primary">Find a tutor</p>
-                                    <p class="text-[14px] text-black mt-1">
+                                    <p class=" lg:text-[18px] xs:text-[12px] text-primary">Find a tutor</p>
+                                    <p class="lg:text-[14px] xs:text-[12px] text-black mt-1">
                                         Choose your ideal teacher from over 10,000 qualified language tutors.
                                     </p>
 
@@ -431,18 +457,18 @@
 
                             </div>
                         </div>
-                        <div class="w-[600px] h-[86px] rounded-2xl shadow-custom-orange mt-5">
+                        <div class="lg:w-[600px] lg:h-[86px] rounded-2xl shadow-custom-orange mt-5">
                             <div class="flex p-5 gap-5">
-                                <div class="w-11 h-11 bg-primary rounded-full flex justify-center items-center"><svg
+                                <div class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25"
-                                        fill="none">
+                                        fill="none" class="xs:w-10 lg:w-18">
                                         <path
                                             d="M15.91 0.416507C16.423 0.415302 16.8286 0.813852 16.8298 1.34525L16.831 2.25105C20.1595 2.51192 22.3583 4.78003 22.3619 8.25829L22.375 18.4394C22.3798 22.2317 19.9973 24.565 16.1784 24.5711L6.8502 24.5832C3.0552 24.588 0.642911 22.1991 0.638139 18.396L0.625008 8.33438C0.620244 4.83317 2.74144 2.5711 6.06997 2.26554L6.06877 1.35975C6.06758 0.828345 6.46128 0.428587 6.98621 0.428587C7.51114 0.427379 7.90483 0.825929 7.90602 1.35733L7.90722 2.20274L14.9938 2.19308L14.9926 1.34767C14.9914 0.816267 15.3851 0.417717 15.91 0.416507ZM16.3968 17.565H16.3848C15.836 17.5783 15.3958 18.0385 15.4077 18.594C15.4089 19.1496 15.8515 19.6073 16.4003 19.6194C16.9599 19.6182 17.4132 19.158 17.412 18.5904C17.412 18.0228 16.9575 17.565 16.3968 17.565ZM6.56626 17.5663C6.01747 17.5904 5.58798 18.0506 5.58917 18.6061C5.61423 19.1617 6.06758 19.5964 6.61637 19.5711C7.15442 19.5469 7.58272 19.0868 7.55766 18.5312C7.54573 17.9878 7.10312 17.565 6.56626 17.5663ZM11.4815 17.5602C10.9327 17.5856 10.5044 18.0445 10.5044 18.6001C10.5295 19.1556 10.9828 19.5892 11.5316 19.565C12.0685 19.5397 12.498 19.0807 12.4729 18.524C12.461 17.9817 12.0184 17.559 11.4815 17.5602ZM6.5603 13.2184C6.01151 13.2426 5.58321 13.7027 5.5844 14.2583C5.60827 14.8138 6.06281 15.2486 6.6116 15.2233C7.14846 15.1991 7.57675 14.739 7.5517 14.1834C7.53977 13.6399 7.09835 13.2172 6.5603 13.2184ZM11.4767 13.1762C10.9279 13.2003 10.4985 13.6605 10.4997 14.216C10.5235 14.7716 10.9781 15.2051 11.5268 15.181C12.0637 15.1556 12.492 14.6967 12.4681 14.1411C12.455 13.5977 12.0136 13.175 11.4767 13.1762ZM16.392 13.1822C15.8432 13.1943 15.4137 13.6411 15.4149 14.1967V14.21C15.4268 14.7655 15.8802 15.187 16.4302 15.175C16.967 15.1617 17.3953 14.7015 17.3834 14.146C17.3583 13.6146 16.9277 13.181 16.392 13.1822ZM14.9962 4.05298L7.9096 4.06264L7.9108 5.03969C7.9108 5.56023 7.51829 5.97085 6.99336 5.97085C6.46843 5.97206 6.07354 5.56264 6.07354 5.04211L6.07235 4.11216C3.74596 4.34525 2.45869 5.7124 2.46226 8.33196L2.46346 8.70757L20.5258 8.68341V8.26071C20.4745 5.66409 19.1717 4.30177 16.8334 4.09887L16.8346 5.02882C16.8346 5.54815 16.4302 5.95998 15.9172 5.95998C15.3922 5.96119 14.9973 5.55056 14.9973 5.03124L14.9962 4.05298Z"
                                             fill="white" />
                                     </svg></div>
                                 <div class="font-poppins">
-                                    <p class=" text-[18px] text-primary">Book a lesson</p>
-                                    <p class="text-[14px] text-black mt-1">
+                                    <p class="lg:text-[18px] xs:text-[12px] text-primary">Book a lesson</p>
+                                    <p class="lg:text-[14px] xs:text-[12px] text-black mt-1">
                                         Select a lesson time and add it to their calendar.
 
                                     </p>
@@ -451,18 +477,18 @@
 
                             </div>
                         </div>
-                        <div class="w-[600px] h-[86px] rounded-2xl shadow-custom-orange mt-5">
+                        <div class="lg:w-[600px] lg:h-[86px] rounded-2xl shadow-custom-orange mt-5">
                             <div class="flex p-5 gap-5">
-                                <div class="w-11 h-11 bg-primary rounded-full flex justify-center items-center"><svg
+                                <div class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18"
-                                        fill="none">
+                                        fill="none" class="xs:w-10 lg:w-18">
                                         <path
                                             d="M3.4375 0.75C2.89049 0.75 2.36589 0.967299 1.97909 1.35409C1.5923 1.74089 1.375 2.26549 1.375 2.8125V14.5H20.625V2.8125C20.625 2.26549 20.4077 1.74089 20.0209 1.35409C19.6341 0.967299 19.1095 0.75 18.5625 0.75H3.4375ZM0 15.1875H22C22 15.7345 21.7827 16.2591 21.3959 16.6459C21.0091 17.0327 20.4845 17.25 19.9375 17.25H2.0625C1.51549 17.25 0.990886 17.0327 0.604092 16.6459C0.217298 16.2591 0 15.7345 0 15.1875H0Z"
                                             fill="white" />
                                     </svg></div>
                                 <div class="font-poppins">
-                                    <p class=" text-[18px] text-primary">Start learning</p>
-                                    <p class="text-[14px] text-black mt-1">
+                                    <p class="lg:text-[18px] xs:text-[12px] text-primary">Start learning</p>
+                                    <p class="lg:text-[14px] xs:text-[12px] text-black mt-1">
                                         Simple as that, you’re learning a language.</p>
                                 </div>
                             </div>
@@ -472,7 +498,7 @@
                 <!-- left side -->
                 <div>
                     <div class="relative">
-                        <img src="images/how it work.png">
+                        <img src="images/how it work.png" class="xs:w-[320px] lg:w-full">
                         <div
                             class="cursor-pointer flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border-[2px] border-white rounded-full">
                             <div class="flex justify-center items-center">
@@ -486,7 +512,7 @@
                         </div>
                         <!-- TRAINGLE PATH -->
                         <div
-                            class="absolute bottom-[-13px] right-[-13px] w-[200px] h-[200px] bg-primary rounded-[15px] clip-triangle shadow-custom-triangle">
+                            class="absolute bottom-[-13px] right-[-13px] lg:w-[200px] xs:w-[150px] xs:h-[150px] lg:h-[200px] bg-primary rounded-[15px] clip-triangle shadow-custom-triangle">
                         </div>
                     </div>
 
@@ -497,14 +523,14 @@
 
     <!-- SWIPER SECTION -->
     <section class="py-20 h-full" id="about">
-        <div class="container mx-auto h-full">
-            <div class="flex justify-between items-center h-full">
+        <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto h-full">
+            <div class="flex flex-col lg:flex-row xs:gap-14 lg:gap-0 justify-between items-center h-full">
                 <!-- left side -->
                 <div class="font-dm w-full h-full">
-                    <h1 class="text-primary font-dm font-[700] text-4xl w-[463px] leading-[3.5rem]">Edu Smart it's about
+                    <h1 class="text-primary font-dm font-[700] lg:text-4xl xs:text-[30px] lg:w-[463px] lg:leading-[3.5rem]">Edu Smart it's about
                         mastering a timeless skill</h1>
 
-                    <div class="text-[16px] text-light-blue w-[529px] mt-8">
+                    <div class="lg:text-[16px] xs:text-[12px] text-light-blue lg:w-[529px] mt-8">
                         <p>cultivating new perspectives, and connecting with fascinating people
                             from around the world.</p>
                     </div>
@@ -558,8 +584,8 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
-                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -568,14 +594,14 @@
 
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
-                                        <div class="font-dm w-[70%]">
-                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing
+                                        <div class="font-dm lg:w-[70%]">
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
                                         <div
-                                            class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"
                                                 viewBox="0 0 8 14" fill="none">
                                                 <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2"
@@ -630,8 +656,8 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
-                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -640,14 +666,14 @@
 
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
-                                        <div class="font-dm w-[70%]">
-                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing
+                                        <div class="font-dm lg:w-[70%]">
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
                                         <div
-                                            class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"
                                                 viewBox="0 0 8 14" fill="none">
                                                 <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2"
@@ -702,8 +728,8 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
-                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -712,14 +738,14 @@
 
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
-                                        <div class="font-dm w-[70%]">
-                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing
+                                        <div class="font-dm lg:w-[70%]">
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
                                         <div
-                                            class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"
                                                 viewBox="0 0 8 14" fill="none">
                                                 <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2"
@@ -774,8 +800,8 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
-                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -784,14 +810,14 @@
 
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
-                                        <div class="font-dm w-[70%]">
-                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing
+                                        <div class="font-dm lg:w-[70%]">
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
                                         <div
-                                            class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"
                                                 viewBox="0 0 8 14" fill="none">
                                                 <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2"
@@ -846,8 +872,8 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm text-[16px] text-light-blue text-justify pt-4">
-                                        <p class="w-[480px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -856,14 +882,14 @@
 
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
-                                        <div class="font-dm w-[70%]">
-                                            <h1 class="text-primary font-[700] tet-[20px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue text-[16px] text-left">Digital Marketing
+                                        <div class="font-dm lg:w-[70%]">
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
                                         <div
-                                            class="w-11 h-11 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
+                                            class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center swiper-button-nextt">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"
                                                 viewBox="0 0 8 14" fill="none">
                                                 <path d="M1 13L7 7L1 1" stroke="white" stroke-width="2"
@@ -885,16 +911,16 @@
 
     <!-- LEARN MORE LANGUAGES -->
     <section class="py-20 h-full">
-        <div class="container mx-auto h-full">
+        <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto h-full">
             <div class="relative h-full rounded-lg p-10 bg-orange-gradient">
                 <!-- Before Pseudo-Element for Background Image -->
                 <div
-                    class="before:absolute before:inset-0 before:bg-[url('images/waves.png')] before:bg-no-repeat before:bg-right  before:rounded-lg before:content-['']">
+                    class="before:absolute before:inset-0 before:bg-[url('images/waves.png')] before:bg-no-repeat lg:before:bg-right xs:before:bg-bottom  before:rounded-lg before:content-['']">
                     <!-- Content -->
-                    <div class="relative flex items-center justify-around py-12">
+                    <div class="relative flex flex-col lg:flex-row items-center lg:gap-0 xs:gap-16 justify-around py-12">
                         <!-- LEFT SIDE -->
-                        <div class="font-poppins w-[60%]">
-                            <h1 class="w-96 text-4xl text-white font-[600]">Learn more than just a language 😍</h1>
+                        <div class="font-poppins lg:w-[60%]">
+                            <h1 class="lg:w-96 lg:text-4xl xs:text-[30px] text-white font-[600]">Learn more than just a language 😍</h1>
                             <p class="text-[14px] text-white font-[500] mt-5">Over 100,000 students join us monthly</p>
                             <div class="flex items-center mt-6">
                                 <!-- Image Avatars -->
@@ -937,36 +963,32 @@
     <!-- FOOTER -->
     <footer class="bg-footer text-white py-20">
         <div class="container mx-auto px-6 md:px-12">
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 px-7">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 px-3 md:px-7">
                 <!-- Column 1 -->
-                <div>
-                    <h3 class="font-[600] font-poppins text-lg mb-8">Tutorify</h3>
+                <div class="text-center md:text-left">
+                    <h3 class="font-[600] font-poppins text-lg mb-4 md:mb-8">Tutorify</h3>
                     <p class="text-[16px] font-dm leading-7">Learn more than just a language</p>
                     <!-- Social Icons -->
-                    <div class="flex space-x-2 mt-8">
-                        <a href="#"
-                            class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
+                    <div class="flex justify-center md:justify-start space-x-2 mt-6 md:mt-8">
+                        <a href="#" class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
                             <i class="fa-brands fa-google"></i>
                         </a>
-                        <a href="#"
-                            class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
+                        <a href="#" class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
-                        <a href="#"
-                            class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
+                        <a href="#" class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="#"
-                            class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
+                        <a href="#" class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
                 </div>
-
+    
                 <!-- Column 2 -->
-                <div class="font-dm">
-                    <h3 class="font-bold text-lg mb-8 font-dm">Find Teacher</h3>
-                    <ul class="space-y-6 text-[16px]">
+                <div class="font-dm text-center md:text-left">
+                    <h3 class="font-bold text-lg mb-4 md:mb-8">Find Teacher</h3>
+                    <ul class="space-y-4 md:space-y-6 text-[16px]">
                         <li><a href="#" class="hover:text-primary">English Teachers</a></li>
                         <li><a href="#" class="hover:text-primary">Chinese Teachers</a></li>
                         <li><a href="#" class="hover:text-primary">French Teachers</a></li>
@@ -974,11 +996,11 @@
                         <li><a href="#" class="hover:text-primary">Other Teachers</a></li>
                     </ul>
                 </div>
-
+    
                 <!-- Column 3 -->
-                <div class="font-dm">
-                    <h3 class="font-bold text-lg mb-8">Lessons</h3>
-                    <ul class="space-y-6 text-[16px]">
+                <div class="font-dm text-center md:text-left">
+                    <h3 class="font-bold text-lg mb-4 md:mb-8">Lessons</h3>
+                    <ul class="space-y-4 md:space-y-6 text-[16px]">
                         <li><a href="#" class="hover:text-primary">Learn English</a></li>
                         <li><a href="#" class="hover:text-primary">Learn Chinese</a></li>
                         <li><a href="#" class="hover:text-primary">Learn French</a></li>
@@ -986,36 +1008,35 @@
                         <li><a href="#" class="hover:text-primary">Learn More Languages</a></li>
                     </ul>
                 </div>
-
+    
                 <!-- Column 4 -->
-                <div class="font-dm">
-                    <h3 class="font-bold text-lg mb-8">Company</h3>
-                    <ul class="space-y-6 text-[16px]">
+                <div class="font-dm text-center md:text-left">
+                    <h3 class="font-bold text-lg mb-4 md:mb-8">Company</h3>
+                    <ul class="space-y-4 md:space-y-6 text-[16px]">
                         <li><a href="#" class="hover:text-primary">About</a></li>
                         <li><a href="#" class="hover:text-primary">How it Works</a></li>
-                        <li><a href="#" class="hover:text-primary">Term</a></li>
+                        <li><a href="#" class="hover:text-primary">Terms</a></li>
                         <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
                     </ul>
                 </div>
-
+    
                 <!-- Column 5 -->
-                <div class="font-dm">
-                    <h3 class="font-bold text-lg mb-8">More</h3>
-                    <ul class="space-y-6 text-[16px]">
+                <div class="font-dm text-center md:text-left">
+                    <h3 class="font-bold text-lg mb-4 md:mb-8">More</h3>
+                    <ul class="space-y-4 md:space-y-6 text-[16px]">
                         <li><a href="#" class="hover:text-primary">Documentation</a></li>
                         <li><a href="#" class="hover:text-primary">License</a></li>
                     </ul>
                 </div>
             </div>
-
+    
             <!-- Footer Bottom -->
-            <div class="text-center pt-28 font-dm">
-                <p class="text-[16px] font-bold font-dm">
-                    Copyright &copy; 2021. Created with love.
-                </p>
+            <div class="text-center pt-12 md:pt-28 font-dm">
+                <p class="text-[16px] font-bold">Copyright &copy; 2021. Created with love.</p>
             </div>
         </div>
     </footer>
+    
 
 
 

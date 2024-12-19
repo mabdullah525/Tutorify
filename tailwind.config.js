@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding:{
+      padding: {
         DEFAULT: '2rem',
       }
     },
@@ -20,6 +20,7 @@ module.exports = {
         'custom-hero': '0px 0.5px 44.7px 0px #FF922F13, 0px 4px 357px 0px #FF922F26',
         'custom-green': '0px -2px 128px 0px #058E6E24',
         'custom-triangle': '0px 22px 0px 0px #FB9C4612',
+        'custom-g-btn': '0px 3.85px 3.62px 0px #407F5507,  0px 10.64px 10.02px 0px #407F550A, 0px 25.63px 24.12px 0px #407F550D, 0px 85px 80px 0px #407F5514',
         'input-shadow': '0px -1.24px 15.77px 0px #00000018, 0px -2.56px 32.49px 0px #0000001E',
         'button-shadow': '0px -0.24px 3.06px 0px #0000000D, 0px -0.61px 7.73px 0px #00000013, 0px -1.24px 15.77px 0px #00000018',
       },
@@ -48,7 +49,7 @@ module.exports = {
       },
       screens: {
         'xs': '320px',
-        'sm-xs':'481px',  
+        'sm-xs': '481px',
       },
       padding: {
         'xs-1': '13px',  // Add padding-x of 1rem for xs screen size
