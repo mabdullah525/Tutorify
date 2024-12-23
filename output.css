@@ -2349,7 +2349,77 @@ video {
   .digital-marketing{
     font-size: 16px;
   }
+}
 
+/* FOOTER */
+
+.footer-a{
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 146 47 / var(--tw-bg-opacity, 1));
+  --tw-bg-opacity: 10%;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.footer-a:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(57 57 57 / var(--tw-bg-opacity, 1));
+}
+
+.hover-text:hover{
+  --tw-text-opacity: 1;
+  color: rgb(57 57 57 / var(--tw-text-opacity, 1));
+}
+
+.colum-two{
+  text-align: center;
+  font-family: DM Sans;
+}
+
+@media (min-width: 768px){
+  .colum-two{
+    text-align: left;
+  }
+}
+
+.main-heading{
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px){
+  .main-heading{
+    margin-bottom: 2rem;
+  }
+}
+
+.footer-links > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.footer-links{
+  font-size: 16px;
+}
+
+@media (min-width: 768px){
+  .footer-links > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+}
+
+@media (min-width: 1024px){
   .lg\:container{
     width: 100%;
     margin-right: auto;

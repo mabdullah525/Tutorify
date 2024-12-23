@@ -94,3 +94,19 @@
 .digital-marketing{
     @apply text-light-blue lg:text-[16px] xs:text-[10px] text-left;
 }
+/* FOOTER */
+.footer-a{
+    @apply text-white w-10 h-10 bg-opacity-[10%] hover:bg-light-black rounded-full bg-primary flex justify-center items-center;
+}
+.hover-text{
+    @apply hover:text-light-black;
+}
+.colum-two{
+    @apply font-dm text-center md:text-left;
+}
+.main-heading{
+    @apply font-bold text-lg mb-4 md:mb-8;
+}
+.footer-links{
+    @apply space-y-4 md:space-y-6 text-[16px];
+}
