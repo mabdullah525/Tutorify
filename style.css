@@ -3,3 +3,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CONTAINER */
+.responsive-container {
+    @apply lg:container lg:px-[2rem] xs:px-xs-1 md:px-xs-4 ;
+
+}
+.padding{
+    @apply py-20;
+}
+/* NAVBAR */
+.top-header {
+    @apply flex font-poppins min-h-[75px] tracking-wide relative z-50 border-b border-bottom-border;
+}
+
+.center-header {
+    @apply flex flex-wrap items-center gap-12 text-light-black w-full mx-auto font-[700] text-lg;
+}
+.collapse-menu{
+    @apply max-lg:hidden lg:!flex lg:ml-auto max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50;
+}
+.toggle-close{
+    @apply lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border;
+}
+.un-order-list{
+    @apply lg:flex items-center gap-[50px] max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50;
+}
+.nav-logo{
+    @apply mb-6 lg:hidden max-lg:block;
+}
+.nav-li{
+    @apply max-lg:border-b max-lg:py-3 px-3;
+}
+
+.button{ 
+    @apply w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300  hover:text-white lg:block hidden;
+}
+.button.secondary-btn{
+    @apply bg-secondary;
+}
+.button.primary-btn{
+    @apply bg-primary;
+} 
+
+/* HERO SECTION */
+.hero-btn{
+    @apply text-white bg-btn-colors shadow-custom-g-btn hover:bg-black hover:text-white transition-all ease-in-out duration-300 rounded-2xl lg:px-12 xs:px-10 lg:py-3 xs:py-4 inline-block text-[16px];
+}
+
+/* AWESOM LEESON SECTION*/
+.lesson-btn{
+    @apply text-white bg-primary border-[3px] border-primary hover:border-[3px] hover:border-black font-[600] hover:bg-black hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-5 py-3 inline-block xs:text-[12px] lg:text-[16px];
+}
+.border-btn{
+    @apply text-primary border-[3px] border-primary font-[600] bg-transparent hover:bg-primary hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-5 py-3 inline-block xs:text-[12px] lg:text-[16px];
+}
+/* WHAT WILL YOU GET */
+.get-card{
+    @apply lg:w-[460px] lg:h-[104px] rounded-2xl shadow-custom-green mt-5;
+}
+/* HOW ITS WORK */
+.work-card{
+    @apply lg:w-[600px] lg:h-[86px] rounded-2xl shadow-custom-orange mt-5;
+}
+.card-flex{
+    @apply flex p-5 gap-5;
+}
+.svg-set{
+    @apply  lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center;
+}

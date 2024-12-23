@@ -59,17 +59,15 @@
 
 <body>
     <!-- NAVBAR -->
-    <div class="lg:container lg:px-[2rem] xs:px-xs-1">
+    <div class="responsive-container">
 
-        <header class='flex  font-poppins min-h-[75px] tracking-wide relative z-50 border-b border-bottom-border'>
-            <div class='flex flex-wrap items-center gap-12 text-light-black w-full mx-auto font-[700] text-lg'>
+        <header class='top-header'>
+            <div class='center-header'>
                 <a href="javascript:void(0)">Tutorify
                 </a>
 
-                <div id="collapseMenu"
-                    class='max-lg:hidden lg:!flex lg:ml-auto max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
-                    <button id="toggleClose"
-                        class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+                <div id="collapseMenu" class='collapse-menu'>
+                    <button id="toggleClose" class='toggle-close'>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
                             viewBox="0 0 320.591 320.591">
                             <path
@@ -81,25 +79,25 @@
                         </svg>
                     </button>
 
-                    <ul
-                        class='lg:flex items-center gap-[50px] max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
-                        <li class='mb-6 hidden max-lg:block'>
+                    <ul class='un-order-list'>
+                        <li class='nav-logo'>
                             <a href="javascript:void(0)">Tutorify
                             </a>
                         </li>
-                        <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <li class='nav-li'>
                             <a href='javascript:void(0)'
                                 class='relative after:block after:w-[70%] after:rounded-[5px] after:h-[3px] text-primary after:bg-primary  active:scale-x-0 hover:after:scale-x-100 transition-transform duration-300  text-[16px] font-[600] font-Poppins flex flex-col justify-center items-center'>Home</a>
                         </li>
-                        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='#lesson'
-                                class='relative after:block after:w-[70%] after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-black text-[16px] font-[600] font-Poppins flex flex-col justify-center items-center'>Lessons</a>
+                        <li class='nav-li'><a href='#lesson'
+                                class='relative after:block after:w-[70%] after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-light-black text-[16px] font-[600] font-Poppins flex flex-col justify-center items-center'>Lessons</a>
                         </li>
-                        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='findtutor.html'
-                                class='relative after:block after:w-[70%] after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-black text-[16px] font-[600] font-Poppins flex flex-col justify-center items-center'>Find
+                        <li class='nav-li'><a href='findtutor.html'
+                                class='relative after:block after:w-[70%] after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-light-black text-[16px] font-[600] font-Poppins flex flex-col justify-center items-center'>Find
                                 Tutors</a>
                         </li>
-                        <li class='max-lg:border-b max-lg:py-3 px-3'><a href='#about'
-                                class='relative after:block after:w-[70%] after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-black text-[16px] font-[600] font-Poppins flex flex-col justify-center items-center'>About
+                        <li class='nav-li'>
+                            <a href='#about'
+                                class='relative after:block after:w-[70%] after:h-[3px] hover:text-primary after:bg-primary after:scale-x-0 hover:after:scale-x-100 transition-transform duration-300 text-light-black text-[16px] font-[600] font-Poppins flex flex-col justify-center items-center'>About
                                 Us</a>
                         </li>
 
@@ -107,10 +105,8 @@
 
                 </div>
                 <div class='flex gap-[50px]  items-center max-lg:ml-auto'>
-                    <button
-                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-secondary hover:text-white lg:block hidden'>Login</button>
-                    <button
-                        class='w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300 bg-primary hover:text-white lg:block hidden'>Sign
+                    <button class='button secondary-btn'>Login</button>
+                    <button class='button primary-btn'>Sign
                         up</button>
 
                     <button id="toggleOpen" class='lg:hidden'>
@@ -127,9 +123,10 @@
     </div>
 
     <!-- HERO SECTION -->
-    <section class="">
-        <div class="lg:container lg:px-[2rem] xs:px-xs-1  font-poppins font-[600] h-full">
-            <div class="flex justify-between xs:gap-12 lg:gap-0 lg:flex-row flex-col items-center h-full lg:pt-14">
+    <section>
+        <div class="responsive-container  font-poppins font-[600] h-full">
+            <div
+                class="flex justify-between xs:gap-12 lg:gap-0 lg:flex-row flex-col md:flex-row  items-center h-full lg:pt-14">
                 <!-- left side -->
                 <div>
                     <div class="flex items-center gap-5 xs:mt-7 lg:mt-0">
@@ -138,7 +135,7 @@
 
                     </div>
                     <div class="lg:text-[55px] xs:text-[30px] font-[700] lg:pt-9 xs:pt-5">
-                        <h1 class="lg:leading-[78px] lg:w-[656px]">Learn Frome Home
+                        <h1 class="lg:leading-[78px] lg:w-[656px] md:w-[400px]">Learn Frome Home
                             With <span class="text-primary">The Best</span>
                             Online Languange Tutors</h1>
                     </div>
@@ -147,8 +144,7 @@
                             Id interdum dui mollis . Suspendisse nulla :</p>
                     </div>
                     <div class="mt-7">
-                        <a href="#"
-                            class="text-white bg-btn-colors shadow-custom-g-btn hover:bg-black hover:text-white transition-all ease-in-out duration-300 rounded-2xl lg:px-12 xs:px-10 lg:py-3 xs:py-4 inline-block text-[16px]"><button>
+                        <a href="#" class="hero-btn"><button>
                                 Try Free Lessons
                             </button></a>
                     </div>
@@ -158,11 +154,11 @@
                     <div class="relative w-full rounded-[204px] bg-custom-gradient"><img src="images/hero-img.png"
                             class="xs:w-[248px] lg:w-full">
                         <div class="absolute lg:top-28 xs:top-16 xs:left-[-0.7rem] lg:left-[-53px]"><img
-                                src="images/china (3).png" class="xs:w-12 lg:w-full"></div>
+                                src="images/china (3).png" class="xs:w-12 md:w-14 lg:w-full"></div>
                         <div class="absolute lg:top-[-11px] lg:right-[17px] xs:top-2 xs:right-[0.5rem]"><img
-                                src="images/china (1).png" class="xs:w-12 lg:w-full"></div>
+                                src="images/china (1).png" class="xs:w-12 md:w-14 lg:w-full"></div>
                         <div class="absolute lg:bottom-56 lg:right-[-50px] xs:bottom-[7.5rem] xs:right-[-1.5rem]"><img
-                                src="images/china (2).png" class="xs:w-12 lg:w-full"></div>
+                                src="images/china (2).png" class="xs:w-12 md:w-14 lg:w-full"></div>
                     </div>
                     <!-- small logo sections -->
                     <div
@@ -211,9 +207,9 @@
     </section>
 
     <!-- WHAT WE OFFER SECTION -->
-    <section class="py-20">
-        <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center">
+    <section class="padding">
+        <div class="responsive-container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row lg:items-center">
                 <!-- Left Side -->
                 <div class="font-poppins w-full font-[600] basis-full md:basis-[40%] xs:text-left md:text-left">
                     <h1 class="text-primary">What do you want to learn ?</h1>
@@ -263,12 +259,15 @@
 
 
     <!-- AWESOM LESSON SECTION -->
-    <section class="py-20 h-full" id="lesson">
-        <div class="lg:container lg:px-[2rem] xs:px-xs-1 h-full">
-            <div class="flex lg:flex-row flex-col justify-between xs:gap-16 lg:gap-0 items-center">
+    <section class="padding h-full" id="lesson">
+        <div class="responsive-container h-full">
+            <div
+                class="flex lg:flex-row md:flex-row flex-col lg:justify-between xs:gap-16 md:gap-0 lg:gap-0 items-center">
                 <!-- left side -->
                 <div class="font-poppins">
-                    <p class="lg:text-4xl xs:text-[30px] font-[600] lg:w-[586px] xs:w-[333px] lg:leading-[57px]">Purchase
+                    <p
+                        class="lg:text-4xl xs:text-[30px] font-[600] lg:w-[586px] md:w-[420px] xs:w-[333px] lg:leading-[57px]">
+                        Purchase
                         your awesome lessons and find your
                         tutors </p>
                     <p class="text-texts text-[16px] lg:w-[555px] mt-10">Lorem ipsum dolor sit amet, consectetur
@@ -277,14 +276,12 @@
                     </p>
                     <div class="flex items-center gap-6">
                         <div class="mt-7">
-                            <a href="#"
-                                class="text-white bg-primary font-[600] hover:bg-black hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-5 py-3 inline-block xs:text-[12px] lg:text-[16px]"><button>
+                            <a href="#" class="lesson-btn"><button>
                                     Book Your Lessons
                                 </button></a>
                         </div>
                         <div class="mt-7">
-                            <a href="#"
-                                class="text-primary border-[3px] border-primary font-[600] bg-transparent hover:bg-primary hover:text-white transition-all ease-in-out duration-300 rounded-2xl px-5 py-3 inline-block xs:text-[12px] lg:text-[16px]"><button>
+                            <a href="#" class="border-btn"><button>
                                     Find Your Tutors
                                 </button></a>
                         </div>
@@ -351,23 +348,25 @@
     </section>
 
     <!-- WHAT WIIL YOU GET -->
-    <section class="py-20 h-full">
-        <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto h-full">
-            <div class="flex items-end flex-col-reverse lg:flex-row xs:gap-16 lg:gap-0">
-                <div class="w-full lg:w-1/2 ">
-                    <div class="relative lg:w-[470px] lg:h-[430px] xs:h-[330px] rounded-[49px] bg-lesson-bg">
-                        <div class="absolute bottom-0 left-0 right-0 "><img src="images/lady-img.png"
+    <section class="padding h-full">
+        <div class="responsive-container mx-auto h-full">
+            <div class="flex lg:items-end md:items-center md:gap-8 flex-col-reverse md:flex-row  lg:flex-row xs:gap-16 lg:gap-0">
+                <div class="relative w-full lg:w-1/2 ">
+                    <div class="lg:w-[400px] lg:h-[400px] xs:h-[330px] rounded-[49px] bg-lesson-bg">
+                        <div class="absolute bottom-0 left-0 right-0"><img src="images/lady-img.png"
                                 class="rounded-[49px]"></div>
                     </div>
                 </div>
                 <!-- right side -->
                 <div class="w-full lg:w-1/2 font-poppins">
                     <div class="flex flex-col">
-                        <h1 class="font-[600] lg:text-4xl xs:text-[30px]">What Will You <span class="text-secondary">Get</span> ?</h1>
-                        <p class="text-texts lg:w-[460px] lg:text-[15px] xs:text-[13px] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        <h1 class="font-[600] lg:text-4xl xs:text-[30px]">What Will You <span
+                                class="text-secondary">Get</span> ?</h1>
+                        <p class="text-texts lg:w-[460px] lg:text-[15px] xs:text-[13px] mt-5">Lorem ipsum dolor sit
+                            amet, consectetur
                             adipiscing elit.
                             Id interdum dui mollis . Suspendisse nulla :</p>
-                        <div class="lg:w-[460px] lg:h-[104px] rounded-2xl shadow-custom-green mt-5">
+                        <div class="get-card">
                             <div class="flex p-5 gap-5">
                                 <div><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
                                         fill="none">
@@ -376,16 +375,18 @@
                                             fill="#058E6E" />
                                     </svg></div>
                                 <div class="font-poppins">
-                                    <p class=" lg:text-[15px] xs:text-[13px] text-light-black font-[600]">Practice for free with the
+                                    <p class=" lg:text-[15px] xs:text-[13px] text-light-black font-[600]">Practice for
+                                        free with the
                                         italki community</p>
-                                    <li class="lg:text-[14px] xs:text-[12px] text-gray-400 mt-1">Develop your language skills by building
+                                    <li class="lg:text-[14px] xs:text-[12px] text-gray-400 mt-1">Develop your language
+                                        skills by building
                                         connections with others...<span class="text-secondary">read more</span></li>
 
                                 </div>
 
                             </div>
                         </div>
-                        <div class="lg:w-[460px] lg:h-[104px] rounded-2xl shadow-custom-green mt-5">
+                        <div class="get-card">
                             <div class="flex p-5 gap-5">
                                 <div><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
                                         fill="none">
@@ -394,16 +395,18 @@
                                             fill="#058E6E" />
                                     </svg></div>
                                 <div class="font-poppins">
-                                    <p class=" lg:text-[16px] xs:text-[13px] text-light-black font-[600]">Take learning beyond the
+                                    <p class=" lg:text-[16px] xs:text-[13px] text-light-black font-[600]">Take learning
+                                        beyond the
                                         classroom</p>
-                                    <li class="lg:text-[14px] xs:text-[12px] text-gray-400 mt-1">Learn from certified teachers with proven
+                                    <li class="lg:text-[14px] xs:text-[12px] text-gray-400 mt-1">Learn from certified
+                                        teachers with proven
                                         experience... <span class="text-secondary">read more</span></li>
 
                                 </div>
 
                             </div>
                         </div>
-                        <div class="lg:w-[460px] lg:h-[104px] rounded-2xl shadow-custom-green mt-5">
+                        <div class="get-card">
                             <div class="flex p-5 gap-5">
                                 <div><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"
                                         fill="none">
@@ -412,9 +415,11 @@
                                             fill="#058E6E" />
                                     </svg></div>
                                 <div class="font-poppins">
-                                    <p class=" lg:text-[16px] xs:text-[13px] text-light-black font-[600]">1-on-1 lessons in more than 150
+                                    <p class=" lg:text-[16px] xs:text-[13px] text-light-black font-[600]">1-on-1 lessons
+                                        in more than 150
                                         languages</p>
-                                    <li class="lg:text-[14px] xs:text-[12px] text-gray-400 mt-1">Learn from certified teachers with proven
+                                    <li class="lg:text-[14px] xs:text-[12px] text-gray-400 mt-1">Learn from certified
+                                        teachers with proven
                                         experience... <span class="text-secondary">read more</span></li>
 
                                 </div>
@@ -428,25 +433,29 @@
     </section>
 
     <!-- HOW ITS WORK -->
-    <section class="py-20 h-full">
-        <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto h-full">
-            <div class="flex lg:items-end  lg:justify-between xs:items-center flex-col lg:flex-row xs:gap-16 lg:gap-0">
+    <section class="padding h-full">
+        <div class="responsive-container mx-auto h-full">
+            <div class="flex lg:items-end  lg:justify-between xs:items-center flex-col lg:flex-row md:flex-row md:gap-8 xs:gap-16 lg:gap-0">
                 <!-- right side -->
                 <div class="font-poppins">
                     <div class="flex flex-col">
-                        <h1 class="font-[600] lg:text-4xl xs:text-[30px]">Here’s how it <span class="text-primary">works</span></h1>
-                        <p class="text-texts lg:w-[460px] lg:text-[15px] xs:text-[12px] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        <h1 class="font-[600] lg:text-4xl xs:text-[30px]">Here’s how it <span
+                                class="text-primary">works</span></h1>
+                        <p class="text-texts lg:w-[460px] lg:text-[15px] xs:text-[12px] mt-5">Lorem ipsum dolor sit
+                            amet, consectetur
                             adipiscing elit. Lorem habitant a tincidunt cras accumsan integer suscipit. Libero accumsan
                             eget aliquet.</p>
-                        <div class="lg:w-[600px] lg:h-[86px] rounded-2xl shadow-custom-orange mt-5">
-                            <div class="flex p-5 gap-5">
-                                <div class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
+                        <div class="work-card">
+                            <div class="card-flex">
+                                <div
+                                    class="svg-set">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 18 22"
                                         fill="none" class="xs:w-10 lg:w-18">
                                         <path
                                             d="M8.8 14.4913C13.5725 14.4913 17.6 15.2668 17.6 18.2589C17.6 21.252 13.5461 22 8.8 22C4.02861 22 0 21.2245 0 18.2325C0 15.2393 4.05392 14.4913 8.8 14.4913ZM8.8 0C12.033 0 14.6234 2.58943 14.6234 5.82016C14.6234 9.05089 12.033 11.6414 8.8 11.6414C5.56809 11.6414 2.97662 9.05089 2.97662 5.82016C2.97662 2.58943 5.56809 0 8.8 0Z"
                                             fill="white" />
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="font-poppins">
                                     <p class=" lg:text-[18px] xs:text-[12px] text-primary">Find a tutor</p>
                                     <p class="lg:text-[14px] xs:text-[12px] text-black mt-1">
@@ -457,15 +466,17 @@
 
                             </div>
                         </div>
-                        <div class="lg:w-[600px] lg:h-[86px] rounded-2xl shadow-custom-orange mt-5">
-                            <div class="flex p-5 gap-5">
-                                <div class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25"
+                        <div class="work-card">
+                            <div class="card-flex">
+                                <div
+                                    class="svg-set">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25"
                                         fill="none" class="xs:w-10 lg:w-18">
                                         <path
                                             d="M15.91 0.416507C16.423 0.415302 16.8286 0.813852 16.8298 1.34525L16.831 2.25105C20.1595 2.51192 22.3583 4.78003 22.3619 8.25829L22.375 18.4394C22.3798 22.2317 19.9973 24.565 16.1784 24.5711L6.8502 24.5832C3.0552 24.588 0.642911 22.1991 0.638139 18.396L0.625008 8.33438C0.620244 4.83317 2.74144 2.5711 6.06997 2.26554L6.06877 1.35975C6.06758 0.828345 6.46128 0.428587 6.98621 0.428587C7.51114 0.427379 7.90483 0.825929 7.90602 1.35733L7.90722 2.20274L14.9938 2.19308L14.9926 1.34767C14.9914 0.816267 15.3851 0.417717 15.91 0.416507ZM16.3968 17.565H16.3848C15.836 17.5783 15.3958 18.0385 15.4077 18.594C15.4089 19.1496 15.8515 19.6073 16.4003 19.6194C16.9599 19.6182 17.4132 19.158 17.412 18.5904C17.412 18.0228 16.9575 17.565 16.3968 17.565ZM6.56626 17.5663C6.01747 17.5904 5.58798 18.0506 5.58917 18.6061C5.61423 19.1617 6.06758 19.5964 6.61637 19.5711C7.15442 19.5469 7.58272 19.0868 7.55766 18.5312C7.54573 17.9878 7.10312 17.565 6.56626 17.5663ZM11.4815 17.5602C10.9327 17.5856 10.5044 18.0445 10.5044 18.6001C10.5295 19.1556 10.9828 19.5892 11.5316 19.565C12.0685 19.5397 12.498 19.0807 12.4729 18.524C12.461 17.9817 12.0184 17.559 11.4815 17.5602ZM6.5603 13.2184C6.01151 13.2426 5.58321 13.7027 5.5844 14.2583C5.60827 14.8138 6.06281 15.2486 6.6116 15.2233C7.14846 15.1991 7.57675 14.739 7.5517 14.1834C7.53977 13.6399 7.09835 13.2172 6.5603 13.2184ZM11.4767 13.1762C10.9279 13.2003 10.4985 13.6605 10.4997 14.216C10.5235 14.7716 10.9781 15.2051 11.5268 15.181C12.0637 15.1556 12.492 14.6967 12.4681 14.1411C12.455 13.5977 12.0136 13.175 11.4767 13.1762ZM16.392 13.1822C15.8432 13.1943 15.4137 13.6411 15.4149 14.1967V14.21C15.4268 14.7655 15.8802 15.187 16.4302 15.175C16.967 15.1617 17.3953 14.7015 17.3834 14.146C17.3583 13.6146 16.9277 13.181 16.392 13.1822ZM14.9962 4.05298L7.9096 4.06264L7.9108 5.03969C7.9108 5.56023 7.51829 5.97085 6.99336 5.97085C6.46843 5.97206 6.07354 5.56264 6.07354 5.04211L6.07235 4.11216C3.74596 4.34525 2.45869 5.7124 2.46226 8.33196L2.46346 8.70757L20.5258 8.68341V8.26071C20.4745 5.66409 19.1717 4.30177 16.8334 4.09887L16.8346 5.02882C16.8346 5.54815 16.4302 5.95998 15.9172 5.95998C15.3922 5.96119 14.9973 5.55056 14.9973 5.03124L14.9962 4.05298Z"
                                             fill="white" />
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="font-poppins">
                                     <p class="lg:text-[18px] xs:text-[12px] text-primary">Book a lesson</p>
                                     <p class="lg:text-[14px] xs:text-[12px] text-black mt-1">
@@ -477,15 +488,17 @@
 
                             </div>
                         </div>
-                        <div class="lg:w-[600px] lg:h-[86px] rounded-2xl shadow-custom-orange mt-5">
-                            <div class="flex p-5 gap-5">
-                                <div class="lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18"
+                        <div class="work-card">
+                            <div class="card-flex">
+                                <div
+                                    class="svg-set">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18"
                                         fill="none" class="xs:w-10 lg:w-18">
                                         <path
                                             d="M3.4375 0.75C2.89049 0.75 2.36589 0.967299 1.97909 1.35409C1.5923 1.74089 1.375 2.26549 1.375 2.8125V14.5H20.625V2.8125C20.625 2.26549 20.4077 1.74089 20.0209 1.35409C19.6341 0.967299 19.1095 0.75 18.5625 0.75H3.4375ZM0 15.1875H22C22 15.7345 21.7827 16.2591 21.3959 16.6459C21.0091 17.0327 20.4845 17.25 19.9375 17.25H2.0625C1.51549 17.25 0.990886 17.0327 0.604092 16.6459C0.217298 16.2591 0 15.7345 0 15.1875H0Z"
                                             fill="white" />
-                                    </svg></div>
+                                    </svg>
+                                </div>
                                 <div class="font-poppins">
                                     <p class="lg:text-[18px] xs:text-[12px] text-primary">Start learning</p>
                                     <p class="lg:text-[14px] xs:text-[12px] text-black mt-1">
@@ -496,9 +509,9 @@
                     </div>
                 </div>
                 <!-- left side -->
-                <div>
-                    <div class="relative">
-                        <img src="images/how it work.png" class="xs:w-[320px] lg:w-full">
+                <div class="">
+                    <div class="relative w-full">
+                        <img src="images/how it work.png" class="xs:w-[320px] md:w-[800px] lg:w-full">
                         <div
                             class="cursor-pointer flex justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 border-[2px] border-white rounded-full">
                             <div class="flex justify-center items-center">
@@ -522,12 +535,14 @@
     </section>
 
     <!-- SWIPER SECTION -->
-    <section class="py-20 h-full" id="about">
+    <section class="padding h-full" id="about">
         <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto h-full">
             <div class="flex flex-col lg:flex-row xs:gap-14 lg:gap-0 justify-between items-center h-full">
                 <!-- left side -->
                 <div class="font-dm w-full h-full">
-                    <h1 class="text-primary font-dm font-[700] lg:text-4xl xs:text-[30px] lg:w-[463px] lg:leading-[3.5rem]">Edu Smart it's about
+                    <h1
+                        class="text-primary font-dm font-[700] lg:text-4xl xs:text-[30px] lg:w-[463px] lg:leading-[3.5rem]">
+                        Edu Smart it's about
                         mastering a timeless skill</h1>
 
                     <div class="lg:text-[16px] xs:text-[12px] text-light-blue lg:w-[529px] mt-8">
@@ -584,8 +599,10 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
-                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div
+                                        class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make
+                                                it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -595,8 +612,10 @@
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
                                         <div class="font-dm lg:w-[70%]">
-                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">
+                                                Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital
+                                                Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
@@ -656,8 +675,10 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
-                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div
+                                        class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make
+                                                it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -667,8 +688,10 @@
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
                                         <div class="font-dm lg:w-[70%]">
-                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">
+                                                Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital
+                                                Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
@@ -728,8 +751,10 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
-                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div
+                                        class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make
+                                                it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -739,8 +764,10 @@
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
                                         <div class="font-dm lg:w-[70%]">
-                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">
+                                                Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital
+                                                Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
@@ -800,8 +827,10 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
-                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div
+                                        class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make
+                                                it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -811,8 +840,10 @@
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
                                         <div class="font-dm lg:w-[70%]">
-                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">
+                                                Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital
+                                                Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
@@ -872,8 +903,10 @@
                                                 fill="#FAAD13" />
                                         </svg>
                                     </div>
-                                    <div class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
-                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make it easier for
+                                    <div
+                                        class="font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4">
+                                        <p class="lg:w-[480px] xs:w-[280px] leading-9"><i>“With Edu Smart, we can make
+                                                it easier for
                                                 you to
                                                 master a foreign
                                                 language,
@@ -883,8 +916,10 @@
                                     <div class="flex justify-between items-center py-5">
                                         <div><img src="images/Photo.png" alt=""></div>
                                         <div class="font-dm lg:w-[70%]">
-                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">Jaquon Hart</h1>
-                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital Marketing
+                                            <h1 class="text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left">
+                                                Jaquon Hart</h1>
+                                            <p class="text-light-blue lg:text-[16px] xs:text-[10px] text-left">Digital
+                                                Marketing
                                                 Executive,
                                                 Hypebeast</p>
                                         </div>
@@ -910,17 +945,19 @@
     </section>
 
     <!-- LEARN MORE LANGUAGES -->
-    <section class="py-20 h-full">
+    <section class="padding h-full">
         <div class="lg:container lg:px-[2rem] xs:px-xs-1 mx-auto h-full">
             <div class="relative h-full rounded-lg p-10 bg-orange-gradient">
                 <!-- Before Pseudo-Element for Background Image -->
                 <div
                     class="before:absolute before:inset-0 before:bg-[url('images/waves.png')] before:bg-no-repeat lg:before:bg-right xs:before:bg-bottom  before:rounded-lg before:content-['']">
                     <!-- Content -->
-                    <div class="relative flex flex-col lg:flex-row items-center lg:gap-0 xs:gap-16 justify-around py-12">
+                    <div
+                        class="relative flex flex-col lg:flex-row items-center lg:gap-0 xs:gap-16 justify-around py-12">
                         <!-- LEFT SIDE -->
                         <div class="font-poppins lg:w-[60%]">
-                            <h1 class="lg:w-96 lg:text-4xl xs:text-[30px] text-white font-[600]">Learn more than just a language 😍</h1>
+                            <h1 class="lg:w-96 lg:text-4xl xs:text-[30px] text-white font-[600]">Learn more than just a
+                                language 😍</h1>
                             <p class="text-[14px] text-white font-[500] mt-5">Over 100,000 students join us monthly</p>
                             <div class="flex items-center mt-6">
                                 <!-- Image Avatars -->
@@ -970,21 +1007,25 @@
                     <p class="text-[16px] font-dm leading-7">Learn more than just a language</p>
                     <!-- Social Icons -->
                     <div class="flex justify-center md:justify-start space-x-2 mt-6 md:mt-8">
-                        <a href="#" class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
+                        <a href="#"
+                            class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
                             <i class="fa-brands fa-google"></i>
                         </a>
-                        <a href="#" class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
+                        <a href="#"
+                            class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
                             <i class="fa-brands fa-twitter"></i>
                         </a>
-                        <a href="#" class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
+                        <a href="#"
+                            class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
                             <i class="fa-brands fa-instagram"></i>
                         </a>
-                        <a href="#" class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
+                        <a href="#"
+                            class="text-white w-10 h-10 bg-opacity-[10%] hover:bg-black rounded-full bg-primary flex justify-center items-center">
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                     </div>
                 </div>
-    
+
                 <!-- Column 2 -->
                 <div class="font-dm text-center md:text-left">
                     <h3 class="font-bold text-lg mb-4 md:mb-8">Find Teacher</h3>
@@ -996,7 +1037,7 @@
                         <li><a href="#" class="hover:text-primary">Other Teachers</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Column 3 -->
                 <div class="font-dm text-center md:text-left">
                     <h3 class="font-bold text-lg mb-4 md:mb-8">Lessons</h3>
@@ -1008,7 +1049,7 @@
                         <li><a href="#" class="hover:text-primary">Learn More Languages</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Column 4 -->
                 <div class="font-dm text-center md:text-left">
                     <h3 class="font-bold text-lg mb-4 md:mb-8">Company</h3>
@@ -1019,7 +1060,7 @@
                         <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Column 5 -->
                 <div class="font-dm text-center md:text-left">
                     <h3 class="font-bold text-lg mb-4 md:mb-8">More</h3>
@@ -1029,14 +1070,14 @@
                     </ul>
                 </div>
             </div>
-    
+
             <!-- Footer Bottom -->
             <div class="text-center pt-12 md:pt-28 font-dm">
                 <p class="text-[16px] font-bold">Copyright &copy; 2021. Created with love.</p>
             </div>
         </div>
     </footer>
-    
+
 
 
 
