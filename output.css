@@ -1537,10 +1537,6 @@ video {
   text-align: right;
 }
 
-.text-justify{
-  text-align: justify;
-}
-
 .font-dm{
   font-family: DM Sans;
 }
@@ -1627,10 +1623,6 @@ video {
 
 .leading-8{
   line-height: 2rem;
-}
-
-.leading-9{
-  line-height: 2.25rem;
 }
 
 .leading-relaxed{
@@ -2241,6 +2233,122 @@ video {
     height: 2.75rem;
     width: 2.75rem;
   }
+}
+
+/* SWIPER SECTION */
+
+.swiper-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 146 47 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 320px){
+  .swiper-logo{
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .swiper-logo{
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+.swiper-text{
+  padding-top: 1rem;
+  text-align: justify;
+  font-family: DM Sans;
+  --tw-text-opacity: 1;
+  color: rgb(144 163 180 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 320px){
+  .swiper-text{
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1024px){
+  .swiper-text{
+    font-size: 16px;
+  }
+}
+
+.swiper-main-heading{
+  line-height: 2.25rem;
+}
+
+@media (min-width: 320px){
+  .swiper-main-heading{
+    width: 280px;
+  }
+}
+
+@media (min-width: 1024px){
+  .swiper-main-heading{
+    width: 480px;
+  }
+}
+
+.swiper-img{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.swiper-img-wid{
+  font-family: DM Sans;
+}
+
+@media (min-width: 1024px){
+  .swiper-img-wid{
+    width: 70%;
+  }
+}
+
+.swiper-h1{
+  text-align: left;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 146 47 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 320px){
+  .swiper-h1{
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px){
+  .swiper-h1{
+    font-size: 20px;
+  }
+}
+
+.digital-marketing{
+  text-align: left;
+  --tw-text-opacity: 1;
+  color: rgb(144 163 180 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 320px){
+  .digital-marketing{
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1024px){
+  .digital-marketing{
+    font-size: 16px;
+  }
 
   .lg\:container{
     width: 100%;
@@ -2591,10 +2699,6 @@ video {
     height: 1.75rem;
   }
 
-  .xs\:h-8{
-    height: 2rem;
-  }
-
   .xs\:h-\[150px\]{
     height: 150px;
   }
@@ -2635,10 +2739,6 @@ video {
     width: 1.75rem;
   }
 
-  .xs\:w-8{
-    width: 2rem;
-  }
-
   .xs\:w-\[150px\]{
     width: 150px;
   }
@@ -2653,10 +2753,6 @@ video {
 
   .xs\:w-\[248px\]{
     width: 248px;
-  }
-
-  .xs\:w-\[280px\]{
-    width: 280px;
   }
 
   .xs\:w-\[289px\]{
@@ -2921,6 +3017,11 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .md\:before\:bg-right::before{
+    content: var(--tw-content);
+    background-position: right;
+  }
 }
 
 @media (min-width: 1024px){
@@ -3032,10 +3133,6 @@ video {
     height: 2.5rem;
   }
 
-  .lg\:h-11{
-    height: 2.75rem;
-  }
-
   .lg\:h-20{
     height: 5rem;
   }
@@ -3078,10 +3175,6 @@ video {
 
   .lg\:w-10{
     width: 2.5rem;
-  }
-
-  .lg\:w-11{
-    width: 2.75rem;
   }
 
   .lg\:w-32{
@@ -3136,10 +3229,6 @@ video {
     width: 470px;
   }
 
-  .lg\:w-\[480px\]{
-    width: 480px;
-  }
-
   .lg\:w-\[489px\]{
     width: 489px;
   }
@@ -3166,10 +3255,6 @@ video {
 
   .lg\:w-\[656px\]{
     width: 656px;
-  }
-
-  .lg\:w-\[70\%\]{
-    width: 70%;
   }
 
   .lg\:w-\[700px\]{
@@ -3285,10 +3370,6 @@ video {
 
   .lg\:text-\[18px\]{
     font-size: 18px;
-  }
-
-  .lg\:text-\[20px\]{
-    font-size: 20px;
   }
 
   .lg\:text-\[55px\]{

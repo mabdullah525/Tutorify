@@ -74,5 +74,23 @@
 }
 /* SWIPER SECTION */
 .swiper-logo{
-    @apply lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center swiper-button-nextt;
+    @apply lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center  ;
+}
+.swiper-text{
+    @apply font-dm lg:text-[16px] xs:text-[13px] text-light-blue text-justify pt-4;
+}
+.swiper-main-heading{
+    @apply lg:w-[480px] xs:w-[280px] leading-9;
+}
+.swiper-img{
+    @apply flex justify-between items-center py-5;
+}
+.swiper-img-wid{
+    @apply font-dm lg:w-[70%];
+}
+.swiper-h1{
+    @apply text-primary font-[700] lg:text-[20px] xs:text-[14px] text-left;
+}
+.digital-marketing{
+    @apply text-light-blue lg:text-[16px] xs:text-[10px] text-left;
 }
