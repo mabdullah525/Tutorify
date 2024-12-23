@@ -72,3 +72,7 @@
 .svg-set{
     @apply  lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center;
 }
+/* SWIPER SECTION */
+.swiper-logo{
+    @apply lg:w-11 lg:h-11 xs:w-8 xs:h-8 bg-primary rounded-full flex justify-center items-center swiper-button-nextt;
+}
