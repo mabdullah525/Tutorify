@@ -203,6 +203,9 @@
 .tab-navbar.unactive{
     @apply after:scale-x-0 hover:after:scale-x-100 text-btn-col hover:text-primary;
 }
+.tab-navbar.unactive.black{
+    @apply after:scale-x-0 hover:after:scale-x-100 text-light-black hover:text-primary;
+}
 .video-discription{
     @apply p-4 text-left font-poppins;
 }
@@ -247,7 +250,7 @@
     @apply lg:py-10;
 }
 .trial-card-body{
-    @apply lg:w-[451px] max-w-screen-2xl p-5 mt-4 bg-white rounded-[25px] shadow-button-shadow overflow-hidden border;
+    @apply lg:w-[490px] max-w-screen-2xl p-5 mt-4 bg-white rounded-[25px] shadow-button-shadow overflow-hidden border;
 }
 .image-set{
     @apply w-full rounded-[20px]  bg-gray-200 overflow-hidden relative;
@@ -260,4 +263,265 @@
 }
 .pricing{
     @apply flex justify-between mb-4 text-black text-sm ;
+}
+.detail-card{
+    @apply flex flex-col lg:flex-row xs:flex-col-reverse justify-between gap-7;
+}
+.left-card-padding{
+    @apply py-10;
+}
+.section-grid{
+    @apply bg-white p-3 grid sm:grid-cols-2  shadow-button-shadow lg:w-full  rounded-[25px] font-poppins overflow-hidden mt-4;
+}
+.height-width{
+    @apply lg:min-h-[312px] lg:min-w-[312px] lg:w-full  lg:h-full;
+}
+.img-setting{
+    @apply lg:w-full lg:h-full object-cover rounded-[20px];
+}
+.padding-x-y{
+    @apply lg:w-full lg:h-full object-cover rounded-[20px];
+}
+.card-detail{
+    @apply lg:px-4 xs:mt-5 lg:mt-0;
+}
+.card-between{
+    @apply flex justify-between items-center mb-2;
+}
+.man-name{
+    @apply text-[20px] font-[600] text-black;
+}
+.offline{
+    @apply text-sm text-btn-col;
+}
+.community-flex{
+    @apply flex justify-between items-center mb-2;
+}
+.styling{
+    @apply text-btn-col text-sm;
+}
+.star-svg{
+    @apply flex items-center gap-5 mt-2;
+}
+.star-gap{
+    @apply flex gap-3;
+}
+.detail-space{
+    @apply space-y-3 font-poppins mt-4;
+}
+.from-style{
+    @apply font-[600] text-[20px];
+}
+.city-style{
+    @apply text-btn-col text-sm pt-1;
+}
+.footer-flex{
+    @apply flex justify-between py-3 px-3;
+}
+.left-side{
+    @apply flex items-center gap-6;
+}
+.svg-footer{
+    @apply flex items-center gap-2;
+}
+.lesson{
+    @apply font-poppins font-[500] text-sm;
+}
+.student{
+    @apply font-poppins font-[500] text-sm text-input;
+}
+.bottom-side{
+    @apply px-3 py-3;
+}
+.svg{
+    @apply flex justify-end items-center gap-3;
+}
+.book-navbar{
+    @apply flex flex-wrap items-center xs:gap-[27px] lg:gap-14 py-10 px-5 ;
+}
+.text-box{
+    @apply w-full rounded-[25px] p-7 lg:shadow-button-shadow xs:shadow-custom-orange font-poppins;
+}
+.about-me{
+    @apply text-[20px] font-semibold;
+}
+.paragraph{
+    @apply text-btn-col text-sm leading-7 mt-4;
+}
+.time-table-p{
+    @apply py-12 font-poppins;
+}
+.time-table-body{
+    @apply w-full shadow-button-shadow rounded-[25px] p-8;
+}
+.table-header{
+    @apply flex flex-wrap justify-between items-center border-b border-border-col pb-2;
+}
+.table-h{
+    @apply lg:text-[20px] md:text-[24px] font-semibold text-light-black;
+}
+.data-nav{
+    @apply flex xs:gap-3 lg:gap-0 flex-wrap justify-between items-center;
+}
+.datanav-gap{
+    @apply flex gap-4 py-5;
+}
+.left-arrow{
+    @apply lg:w-10 lg:h-10 xs:w-7 xs:h-7 bg-bottom-border rounded-[8px] flex justify-center items-center;
+}
+.left-arrow.right{
+    @apply border-[1px] bg-transparent;
+}
+.date{
+    @apply text-lg text-light-black;
+}
+.time{
+    @apply border border-bottom-border rounded px-2 py-3 text-light-black text-sm;
+}
+.time-other{
+    @apply text-light-black text-lg;
+}
+.divider{
+    @apply flex items-center justify-between pt-3 py-3;
+}
+.divide-lines{
+    @apply w-20 h-[3px] bg-input;
+}
+.divide-lines.bg{
+    @apply bg-bottom-border;
+}
+.days-grid{
+    @apply grid lg:grid-cols-7 md:grid-cols-7 xs:grid-cols-3 gap-2 text-center items-center text-gray-500 font-medium text-sm md:text-base;
+}
+.sun-primary{
+    @apply text-input text-[16px];
+}
+.sun-primary.gray{
+    @apply text-light-black;
+}
+.date-primary{
+    @apply bg-input font-semibold text-[16px] flex items-center justify-center text-white w-10 h-10 rounded-[4px] mx-auto;
+}
+.date-primary.white{
+    @apply bg-bottom-border;
+}
+.block-hidden{
+    @apply lg:block md:block xs:hidden;
+}
+.schedule{
+    @apply grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-2 mt-4 text-center text-light-black font-poppins text-[16px];
+}
+.sunday-space{
+    @apply space-y-2;
+}
+.view-full{
+    @apply mt-7 text-center flex justify-center lg:py-8;
+}
+.view-btn{
+    @apply bg-input flex justify-center items-center gap-2 hover:bg-black text-white py-3 px-6 sm:px-10 rounded-[5px];
+}
+.review{
+    @apply py-3 font-poppins;
+}
+.review-top{
+    @apply w-full  shadow-button-shadow rounded-[25px] p-8;
+}
+.header-review{
+    @apply flex justify-between items-center border-b border-border-col pb-2;
+}
+.review-h{
+    @apply text-[20px] font-semibold text-light-black;
+}
+.rating-summary{
+    @apply flex lg:flex-row md:flex-row items-center  flex-col mt-4;
+}
+.rating-score{
+    @apply flex-shrink-0 w-48 text-center lg:mr-4 lg:border-r border-border-col;
+}
+.digits{
+    @apply text-[60px] font-semibold text-light-black py-4;
+}
+.digit-flex{
+    @apply flex justify-center mt-1;
+}
+.digits-gap{
+    @apply flex items-center gap-3;
+}
+.two-review{
+    @apply text-[20px] text-light-black font-semibold mt-4;
+}
+.rating-space{
+    @apply flex-1 px-5 space-y-6;
+}
+.star-view{
+    @apply flex items-center xs:justify-center lg:justify-between mb-1;
+}
+.main-star{
+    @apply text-sm text-light-black mr-2;
+}
+.long-border{
+    @apply lg:w-[259px] xs:w-[195px] rounded-[3px] h-2;
+}
+.border-prim{
+    @apply bg-input h-2 rounded-[3px];
+}
+.border-prim.light-b{
+    @apply bg-bottom-border;
+}
+.zero{
+    @apply text-sm text-light-black ml-2;
+}
+.single-review{
+    @apply mt-4 lg:p-4 bg-white rounded-md;
+}
+.single-flex{
+    @apply flex  gap-5 mb-2;
+}
+.avatar{
+    @apply w-14 h-14 flex-shrink-0;
+}
+.avatar-img{
+    @apply  rounded-full mr-3;
+}
+.user-name{
+    @apply font-bold font-dm text-input text-[20px];
+}
+.user-flex{
+    @apply flex items-center gap-2 mt-5;
+}
+.user-mt{
+    @apply mt-3;
+}
+.user-text{
+    @apply text-light-black text-[16px] lg:w-[489px] font-dm ;
+}
+.user-date{
+    @apply lg:block xs:hidden text-right text-[16px] font-dm text-bottom-border mt-2;
+}
+.show-more{
+    @apply mt-7 text-center flex justify-center;
+}
+.text-box-body{
+    @apply py-8;
+}
+.resume-body{
+    @apply w-full max-w-[700px] mx-auto rounded-[25px] p-7 shadow-button-shadow font-poppins;
+}
+.resume-border{
+    @apply border-b border-border-col pb-2;
+}
+.resume-nav-space{
+    @apply py-7;
+}
+.resume-nav{
+    @apply flex flex-wrap items-center lg:gap-0 xs:gap-5 md:justify-between py-10 lg:px-5 ;
+}
+.degree{
+    @apply flex flex-col sm:flex-row justify-between  font-poppins text-center sm:text-left;
+}
+.degre-name{
+    @apply px-3 text-light-black text-[16px] w-full sm:w-[100px];
+}
+.year-degre{
+    @apply px-3 text-light-black text-[16px] w-full sm:w-auto;
 }
