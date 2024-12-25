@@ -39,7 +39,7 @@
 }
 
 .button{ 
-    @apply w-[102px] py-[8px] text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300  hover:text-white lg:block hidden;
+    @apply w-[102px] py-2 text-[16px] rounded-lg font-[600] text-white hover:bg-black transition-all ease-in-out duration-300  hover:text-white lg:block hidden;
 }
 .button.secondary-btn{
     @apply bg-secondary;
@@ -216,7 +216,7 @@
     @apply mt-3 text-sm text-btn-col leading-relaxed;
 }
 .btn-setting{
-    @apply pt-4 flex justify-end;
+    @apply pt-8 flex justify-end;
 }
 .read-btn{
     @apply transition-all ease-in-out duration-300 shadow-button-shadow px-5 py-2.5 rounded-[5px] text-white text-sm tracking-wider bg-green hover:bg-black;
@@ -247,7 +247,7 @@
     @apply bg-btn-colors hover:bg-black text-white ;
 }
 .card-p{
-    @apply lg:py-10;
+    @apply lg:py-6;
 }
 .trial-card-body{
     @apply lg:w-[490px] max-w-screen-2xl p-5 mt-4 bg-white rounded-[25px] shadow-button-shadow overflow-hidden border;

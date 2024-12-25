@@ -1659,8 +1659,8 @@ video {
   display: none;
   width: 102px;
   border-radius: 0.5rem;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-size: 16px;
   font-weight: 600;
   --tw-text-opacity: 1;
@@ -2478,7 +2478,7 @@ video {
 .btn-setting{
   display: flex;
   justify-content: flex-end;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .read-btn{
@@ -2595,8 +2595,8 @@ video {
 
 @media (min-width: 1024px){
   .card-p{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
